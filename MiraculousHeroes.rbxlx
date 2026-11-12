@@ -1,0 +1,4193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<roblox version="4">
+  <Item class="DataModel" referent="RBX0">
+    <Item class="ReplicatedStorage" referent="RBX1">
+      <Properties>
+        <string name="Name">ReplicatedStorage</string>
+      </Properties>
+      <Item class="Folder" referent="RBX5">
+        <Properties>
+          <string name="Name">MiraculousShared</string>
+        </Properties>
+        <Item class="Folder" referent="RBX6">
+          <Properties>
+            <string name="Name">Heroes</string>
+          </Properties>
+          <Item class="ModuleScript" referent="RBX7">
+            <Properties>
+              <string name="Name">Carapace</string>
+              <ProtectedString name="Source">--[[ Herói: Carapace (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/Heroes/Carapace
+	Modelos esperados (opcionais, ver README):
+	ServerStorage/Costumes/Carapace | ServerStorage/Weapons/Shield | ReplicatedStorage/Assets/Kwamis/Wayzz ]]
+return {
+	Id = "Carapace", HeroName = "Carapace", CivilianName = "Nino",
+	Kwami = { Name = "Wayzz", Concept = "Proteção" },
+	Costume = "Carapace", Weapon = "Shield",
+	Phrases = { Transform = "Wayzz, Shell On!", Detransform = "Wayzz, Shell Off!" },
+	Colors = { Primary = Color3.fromRGB(40,170,90), Secondary = Color3.fromRGB(250,250,250), Glow = Color3.fromRGB(120,255,170) },
+	Stats = { MaxHealth = 160, WalkSpeed = 21, JumpPower = 62, AttackMult = 1 },
+	CanPurify = false,
+	Powers = {
+		{ Id = "Shellter", Name = "Shell-ter", Cooldown = 30, Energy = 35, Range = 40 },
+		{ Id = "ShellSpin", Name = "Shell Spin", Cooldown = 7, Energy = 15 },
+	},
+}
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX8">
+            <Properties>
+              <string name="Name">CatNoir</string>
+              <ProtectedString name="Source">--[[ Herói: Cat Noir (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/Heroes/CatNoir
+	Modelos esperados (opcionais, ver README):
+	ServerStorage/Costumes/CatNoir | ServerStorage/Weapons/Baton | ReplicatedStorage/Assets/Kwamis/Plagg ]]
+return {
+	Id = "CatNoir", HeroName = "Cat Noir", CivilianName = "Adrien",
+	Kwami = { Name = "Plagg", Concept = "Destruição" },
+	Costume = "CatNoir", Weapon = "Baton",
+	Phrases = { Transform = "Plagg, Claws Out!", Detransform = "Plagg, Claws In!" },
+	Colors = { Primary = Color3.fromRGB(40,40,48), Secondary = Color3.fromRGB(15,15,18), Glow = Color3.fromRGB(120,255,80) },
+	Stats = { MaxHealth = 135, WalkSpeed = 24, JumpPower = 62, AttackMult = 1 },
+	CanPurify = false,
+	Powers = {
+		{ Id = "Cataclysm", Name = "Cataclysm", Cooldown = 30, Energy = 35, StartsTimer = true },
+		{ Id = "BatonLeap", Name = "Baton Leap", Cooldown = 3.5, Energy = 8, Range = 90 },
+		{ Id = "StaffSpin", Name = "Staff Spin", Cooldown = 9, Energy = 15 },
+	},
+}
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX9">
+            <Properties>
+              <string name="Name">Ladybug</string>
+              <ProtectedString name="Source">--[[ Herói: Ladybug (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/Heroes/Ladybug
+	Modelos esperados (opcionais, ver README):
+	ServerStorage/Costumes/Ladybug | ServerStorage/Weapons/Yoyo | ReplicatedStorage/Assets/Kwamis/Tikki ]]
+return {
+	Id = "Ladybug", HeroName = "Ladybug", CivilianName = "Marinette",
+	Kwami = { Name = "Tikki", Concept = "Criação" },
+	Costume = "Ladybug", Weapon = "Yoyo",
+	Phrases = { Transform = "Tikki, Spots On!", Detransform = "Tikki, Spots Off!" },
+	Colors = { Primary = Color3.fromRGB(225,25,45), Secondary = Color3.fromRGB(25,25,30), Glow = Color3.fromRGB(255,90,110) },
+	Stats = { MaxHealth = 130, WalkSpeed = 23, JumpPower = 62, AttackMult = 1 },
+	CanPurify = true,
+	Powers = {
+		{ Id = "LuckyCharm", Name = "Lucky Charm", Cooldown = 25, Energy = 25, StartsTimer = true },
+		{ Id = "MiraculousLadybug", Name = "Miraculous Ladybug", Cooldown = 40, Energy = 40, RequiresFlag = "LuckyCharm", Range = 90 },
+		{ Id = "YoyoSwing", Name = "Yo-yo Swing", Cooldown = 3.5, Energy = 8, Range = 90 },
+	},
+}
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX10">
+            <Properties>
+              <string name="Name">RenaRouge</string>
+              <ProtectedString name="Source">--[[ Herói: Rena Rouge (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/Heroes/RenaRouge
+	Modelos esperados (opcionais, ver README):
+	ServerStorage/Costumes/RenaRouge | ServerStorage/Weapons/Flute | ReplicatedStorage/Assets/Kwamis/Trixx ]]
+return {
+	Id = "RenaRouge", HeroName = "Rena Rouge", CivilianName = "Alya",
+	Kwami = { Name = "Trixx", Concept = "Ilusão" },
+	Costume = "RenaRouge", Weapon = "Flute",
+	Phrases = { Transform = "Trixx, Let's Pounce!", Detransform = "Trixx, Let's Rest!" },
+	Colors = { Primary = Color3.fromRGB(255,130,30), Secondary = Color3.fromRGB(250,245,235), Glow = Color3.fromRGB(255,180,80) },
+	Stats = { MaxHealth = 115, WalkSpeed = 23, JumpPower = 62, AttackMult = 1 },
+	CanPurify = false,
+	Powers = {
+		{ Id = "Mirage", Name = "Mirage", Cooldown = 28, Energy = 35, Range = 60 },
+		{ Id = "FluteBlast", Name = "Flute Blast", Cooldown = 6, Energy = 12 },
+	},
+}
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX11">
+            <Properties>
+              <string name="Name">Ryuko</string>
+              <ProtectedString name="Source">--[[ Herói: Ryuko (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/Heroes/Ryuko
+	Modelos esperados (opcionais, ver README):
+	ServerStorage/Costumes/Ryuko | ServerStorage/Weapons/Glaive | ReplicatedStorage/Assets/Kwamis/Longg ]]
+return {
+	Id = "Ryuko", HeroName = "Ryuko", CivilianName = "Kagami",
+	Kwami = { Name = "Longg", Concept = "Elementos" },
+	Costume = "Ryuko", Weapon = "Glaive",
+	Phrases = { Transform = "Longg, Dragon Rise!", Detransform = "Longg, Dragon Rest!" },
+	Colors = { Primary = Color3.fromRGB(230,235,250), Secondary = Color3.fromRGB(30,40,90), Glow = Color3.fromRGB(120,200,255) },
+	Stats = { MaxHealth = 125, WalkSpeed = 24, JumpPower = 62, AttackMult = 1 },
+	CanPurify = false,
+	Powers = {
+		{ Id = "Lightning", Name = "Raio", Cooldown = 8, Energy = 20, Range = 90 },
+		{ Id = "Gale", Name = "Vento", Cooldown = 6, Energy = 12 },
+		{ Id = "Wave", Name = "Onda", Cooldown = 9, Energy = 18, Range = 80 },
+		{ Id = "Flame", Name = "Chamas", Cooldown = 10, Energy = 20 },
+	},
+}
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX12">
+            <Properties>
+              <string name="Name">Viperion</string>
+              <ProtectedString name="Source">--[[ Herói: Viperion (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/Heroes/Viperion
+	Modelos esperados (opcionais, ver README):
+	ServerStorage/Costumes/Viperion | ServerStorage/Weapons/Lyre | ReplicatedStorage/Assets/Kwamis/Sass ]]
+return {
+	Id = "Viperion", HeroName = "Viperion", CivilianName = "Luka",
+	Kwami = { Name = "Sass", Concept = "Segunda Chance" },
+	Costume = "Viperion", Weapon = "Lyre",
+	Phrases = { Transform = "Sass, Scales Rise!", Detransform = "Sass, Scales Fall!" },
+	Colors = { Primary = Color3.fromRGB(30,170,150), Secondary = Color3.fromRGB(230,235,230), Glow = Color3.fromRGB(90,255,230) },
+	Stats = { MaxHealth = 120, WalkSpeed = 23, JumpPower = 62, AttackMult = 1 },
+	CanPurify = false,
+	Powers = {
+		{ Id = "SecondChance", Name = "Second Chance", Cooldown = 60, Energy = 45, StartsTimer = true },
+		{ Id = "LyreWave", Name = "Lyre Wave", Cooldown = 6, Energy = 12, Range = 70 },
+	},
+}
+</ProtectedString>
+            </Properties>
+          </Item>
+        </Item>
+        <Item class="Folder" referent="RBX13">
+          <Properties>
+            <string name="Name">VFX</string>
+          </Properties>
+          <Item class="Folder" referent="RBX14">
+            <Properties>
+              <string name="Name">Effects</string>
+            </Properties>
+            <Item class="ModuleScript" referent="RBX15">
+              <Properties>
+                <string name="Name">AkumaFX</string>
+                <ProtectedString name="Source">--[[ Efeitos de akumatização, purificação e habilidades de vilões ]]
+local RS = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+local CollectionService = game:GetService("CollectionService")
+local Shared = RS:WaitForChild("MiraculousShared")
+local Util = require(Shared.Util)
+local Lib = require(Shared.VFX.VFXLib)
+
+local E = {}
+local DARK = Color3.fromRGB(120, 40, 200)
+
+-- Borboleta gerada por script: corpo + 2 asas (WedgeParts) batendo
+local function makeButterfly(color)
+	local model = Instance.new("Model")
+	local body = Util.New("Part", {
+		Size = Vector3.new(0.3, 0.3, 1.2), Anchored = true, CanCollide = false, CanQuery = false,
+		Material = Enum.Material.Neon, Color = color, CastShadow = false, Name = "Body",
+	}, model)
+	local wings = {}
+	for i = 1, 2 do
+		wings[i] = Util.New("Part", {
+			Size = Vector3.new(1.8, 0.08, 1.6), Anchored = true, CanCollide = false, CanQuery = false,
+			Material = Enum.Material.Neon, Color = color, Transparency = 0.2, CastShadow = false,
+		}, model)
+	end
+	local a0 = Util.New("Attachment", { Position = Vector3.new(0, 0, 0.6) }, body)
+	local a1 = Util.New("Attachment", { Position = Vector3.new(0, 0, -0.6) }, body)
+	Util.New("Trail", { Attachment0 = a0, Attachment1 = a1, Lifetime = 0.8, LightEmission = 1,
+		Color = ColorSequence.new(color), Transparency = NumberSequence.new(0.2, 1), WidthScale = NumberSequence.new(1, 0) }, body)
+	Util.New("PointLight", { Color = color, Range = 12, Brightness = 2 }, body)
+	Lib.Emitter(body, { Color = color, Rate = 25, Speed = NumberRange.new(0.5, 2), Lifetime = NumberRange.new(0.5, 1) })
+	model.Parent = workspace
+	local function place(cf, t)
+		body.CFrame = cf
+		local flap = math.sin(t * 22) * 0.9
+		wings[1].CFrame = cf * CFrame.new(1.0, 0, 0) * CFrame.Angles(0, 0, flap)
+		wings[2].CFrame = cf * CFrame.new(-1.0, 0, 0) * CFrame.Angles(0, 0, -flap)
+	end
+	return model, place
+end
+E._makeButterfly = makeButterfly
+
+-- Borboleta voa de "from" até o alvo e mergulha nele
+function E.AkumaFly(d)
+	local target = d.To
+	local hrp = target and target:FindFirstChild("HumanoidRootPart")
+	if not hrp then return end
+	local from = d.From
+	local dur = d.Duration or 3
+	local model, place = makeButterfly(DARK)
+	Lib.Sound("Akuma", hrp)
+	local t0 = os.clock()
+	local conn
+	conn = RunService.RenderStepped:Connect(function()
+		local t = (os.clock() - t0) / dur
+		if t &gt;= 1 or not hrp.Parent then
+			conn:Disconnect()
+			model:Destroy()
+			if hrp.Parent then
+				local pos = hrp.Position
+				Lib.Flash(DARK, 0.25, 0.8)
+				Lib.Sphere(pos, DARK, 2, 16, 0.6, 0.3)
+				Lib.Burst(pos, DARK, 70, 35, 1.2, 1.1, Color3.fromRGB(255, 80, 200))
+				Lib.Lightning(pos + Vector3.new(0, 14, 0), pos, DARK, 8, 3, 0.5, 0.4)
+				Lib.Shake(0.35, 0.5)
+			end
+			return
+		end
+		local goal = hrp.Position + Vector3.new(0, 1.5, 0)
+		local wob = Vector3.new(math.sin(t * 14) * 4, math.cos(t * 9) * 3, math.cos(t * 12) * 4) * (1 - t)
+		local pos = from:Lerp(goal, t * t * (3 - 2 * t)) + wob
+		place(CFrame.lookAt(pos, goal), os.clock())
+	end)
+end
+
+-- Transformação em vilão: aura escura, anéis, butterfly mask de partículas
+function E.AkumaTransform(d)
+	local char = d.Char
+	local hrp = char and char:FindFirstChild("HumanoidRootPart")
+	if not hrp or not Lib.InRange(hrp.Position) then return end
+	local c = d.Color or DARK
+	local feet = hrp.Position - Vector3.new(0, 2.8, 0)
+	Lib.Flash(DARK, 0.3, 0.9)
+	Lib.Pillar(feet, DARK, 3.5, 50, 1)
+	for i = 1, 3 do Lib.Ring(feet, i % 2 == 0 and c or DARK, 3, 12 + i * 8, 0.6 + 0.15 * i, 0.4) end
+	Lib.Burst(hrp.Position, DARK, 100, 45, 1.4, 1.3, c)
+	Lib.Light(hrp.Position, c, 40, 6, 1)
+	Lib.Spiral(char, DARK, 1.2, 6, 4, 7)
+	Lib.Shake(0.5, 0.6)
+end
+
+-- Akuma liberada: pulso e aviso
+function E.AkumaReleased(d)
+	local part = d.Part
+	if not (part and part.Parent) then return end
+	Lib.Burst(part.Position, DARK, 40, 20, 1, 1)
+	Lib.Ring(part.Position, DARK, 1, 14, 0.6, 0.2, true)
+	Lib.Emitter(part, { Color = DARK, Color2 = Color3.fromRGB(255, 80, 200), Rate = 40, Speed = NumberRange.new(1, 4), Lifetime = NumberRange.new(0.8, 1.4) })
+	local att0 = Util.New("Attachment", { Position = Vector3.new(0, 0.5, 0) }, part)
+	local att1 = Util.New("Attachment", { Position = Vector3.new(0, -0.5, 0) }, part)
+	Util.New("Trail", { Attachment0 = att0, Attachment1 = att1, Lifetime = 1, LightEmission = 1,
+		Color = ColorSequence.new(DARK), Transparency = NumberSequence.new(0.2, 1) }, part)
+end
+
+-- Purificação: yo-yo captura e a borboleta vira branca e voa
+function E.Purify(d)
+	local pos = d.Position
+	if not Lib.InRange(pos) then return end
+	local from = d.From and d.From:FindFirstChild("HumanoidRootPart")
+	if from then Lib.Line(from.Position + Vector3.new(0, 1, 0), pos, Color3.fromRGB(255, 70, 90), 0.25, 0.4) end
+	Lib.Sound("Purify")
+	Lib.Flash(Color3.new(1, 1, 1), 0.35, 0.8)
+	Lib.Sphere(pos, DARK, 2, 8, 0.25, 0.2)
+	Lib.Sphere(pos, Color3.new(1, 1, 1), 1, 14, 0.7, 0.2)
+	Lib.Burst(pos, Color3.new(1, 1, 1), 60, 25, 1, 1.2)
+	Lib.Ring(pos, Color3.new(1, 1, 1), 1, 18, 0.7, 0.2, true)
+	local model, place = makeButterfly(Color3.new(1, 1, 1))
+	local t0 = os.clock()
+	local conn
+	conn = RunService.RenderStepped:Connect(function()
+		local t = (os.clock() - t0) / 3
+		if t &gt;= 1 then conn:Disconnect(); model:Destroy() return end
+		local p = pos + Vector3.new(math.sin(t * 8) * 3, t * 70, math.cos(t * 6) * 3)
+		place(CFrame.lookAt(p, p + Vector3.new(0.2, 1, 0)), os.clock())
+	end)
+end
+
+function E.Deakuma(d)
+	local hrp = d.Char and d.Char:FindFirstChild("HumanoidRootPart")
+	if not hrp or not Lib.InRange(hrp.Position) then return end
+	Lib.Burst(hrp.Position, Color3.new(1, 1, 1), 50, 16, 0.9, 1.4, Color3.fromRGB(180, 255, 200))
+	Lib.Ring(hrp.Position - Vector3.new(0, 2.8, 0), Color3.new(1, 1, 1), 2, 16, 0.9, 0.2)
+	Lib.Light(hrp.Position, Color3.new(1, 1, 1), 28, 3, 1)
+end
+
+function E.Shockwave(d)
+	if not Lib.InRange(d.Position) then return end
+	local c = d.Color or DARK
+	local feet = d.Position - Vector3.new(0, 2.8, 0)
+	Lib.Ring(feet, c, 2, d.Radius * 2, 0.5, 0.5)
+	Lib.Ring(feet, Color3.new(1, 1, 1), 2, d.Radius * 2.4, 0.7, 0.2)
+	Lib.Burst(feet, c, 60, 35, 1.3, 0.9)
+	Lib.Light(d.Position, c, 30, 4, 0.5)
+	Lib.Shake(0.4, 0.4)
+end
+
+function E.StunPulse(d)
+	if not Lib.InRange(d.Position) then return end
+	local c = d.Color or DARK
+	for i = 1, 3 do
+		task.delay(i * 0.1, function() Lib.Sphere(d.Position, c, 2, d.Radius * 2, 0.5, 0.6) end)
+	end
+	Lib.Burst(d.Position, c, 40, 30, 1, 0.8)
+end
+
+function E.Warp(d)
+	local c = d.Color or DARK
+	Lib.Burst(d.From, c, 40, 25, 1, 0.8)
+	Lib.Line(d.From, d.To, c, 1.2, 0.35)
+	Lib.Burst(d.To, c, 40, 25, 1, 0.8)
+	Lib.Sphere(d.To, c, 1, 10, 0.3)
+end
+
+-- Aura permanente em vilões (via Tag "AkumaVillain" - cobre quem entrou depois)
+function E.Setup()
+	local active = {}
+	local function attach(char)
+		if active[char] then return end
+		local color = char:GetAttribute("AuraColor") or DARK
+		active[char] = Lib.Aura(char, color, 24)
+	end
+	local function detach(char)
+		if active[char] then active[char](); active[char] = nil end
+	end
+	CollectionService:GetInstanceAddedSignal("AkumaVillain"):Connect(function(c) task.wait(0.1); attach(c) end)
+	CollectionService:GetInstanceRemovedSignal("AkumaVillain"):Connect(detach)
+	for _, c in ipairs(CollectionService:GetTagged("AkumaVillain")) do attach(c) end
+end
+
+return E
+</ProtectedString>
+              </Properties>
+            </Item>
+            <Item class="ModuleScript" referent="RBX16">
+              <Properties>
+                <string name="Name">CombatFX</string>
+                <ProtectedString name="Source">--[[ Efeitos de combate: impacto, bloqueio, golpe, esquiva, stun, confusão, cura, escudos ]]
+local RS = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+local Shared = RS:WaitForChild("MiraculousShared")
+local Util = require(Shared.Util)
+local Lib = require(Shared.VFX.VFXLib)
+
+local E = {}
+
+function E.Impact(d)
+	if not Lib.InRange(d.Position) then return end
+	local c, s = d.Color or Color3.new(1, 1, 1), d.Size or 1
+	Lib.Burst(d.Position, c, 14 * s, 22, 0.7 * s, 0.4, Color3.new(1, 1, 1))
+	Lib.Sphere(d.Position, c, 0.5, 4 * s, 0.18, 0.2)
+	Lib.Ring(d.Position, c, 0.5, 6 * s, 0.25, 0.15, true)
+	Lib.Light(d.Position, c, 10 * s, 3, 0.2)
+	Lib.Sound("Impact")
+	if s &gt; 2 then Lib.Shake(0.15, 0.15) end
+end
+
+function E.Block(d)
+	if not Lib.InRange(d.Position) then return end
+	local c = d.Perfect and Color3.fromRGB(255, 240, 130) or Color3.fromRGB(150, 200, 255)
+	Lib.Burst(d.Position, c, d.Perfect and 40 or 18, 28, 0.8, 0.5)
+	Lib.Ring(d.Position, c, 1, d.Perfect and 14 or 8, 0.35, 0.15, true)
+	Lib.Light(d.Position, c, 14, 3, 0.25)
+	Lib.Sound("Block")
+end
+
+-- Arco de corte na frente do personagem
+function E.Slash(d)
+	local hrp = d.Char and d.Char:FindFirstChild("HumanoidRootPart")
+	if not hrp or not Lib.InRange(hrp.Position) then return end
+	local c = d.Color or Color3.new(1, 1, 1)
+	local combo = d.Combo or 1
+	local tilt = (combo % 2 == 0) and 25 or -25
+	local arc = Util.New("Part", {
+		Shape = Enum.PartType.Cylinder, Anchored = true, CanCollide = false, CanQuery = false, Material = Enum.Material.Neon,
+		Color = c, Transparency = 0.25, Size = Vector3.new(0.12, 8, 8), CastShadow = false,
+		CFrame = hrp.CFrame * CFrame.new(0, 0.3, -4.5) * CFrame.Angles(math.rad(90), 0, math.rad(tilt)) * CFrame.Angles(0, 0, math.rad(90)),
+	}, workspace)
+	arc.Size = Vector3.new(0.12, 8, 8)
+	Util.Tween(arc, 0.2, { Size = Vector3.new(0.05, 11, 11), Transparency = 1 })
+	Util.Clean(arc, 0.3)
+	if combo == 4 then
+		Lib.Ring(hrp.Position - Vector3.new(0, 2.8, 0), c, 2, 16, 0.4, 0.2)
+		Lib.Shake(0.2, 0.2)
+	end
+end
+
+function E.Dodge(d)
+	local char = d.Char
+	local hrp = char and char:FindFirstChild("HumanoidRootPart")
+	if not hrp or not Lib.InRange(hrp.Position) then return end
+	-- imagens residuais: cópias neon translúcidas dos membros
+	for i = 1, Lib.Count(3) do
+		task.delay((i - 1) * 0.05, function()
+			if not char.Parent then return end
+			for _, part in ipairs(char:GetChildren()) do
+				if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+					local g = Util.New("Part", {
+						Anchored = true, CanCollide = false, CanQuery = false, Material = Enum.Material.Neon,
+						Color = Color3.fromRGB(180, 220, 255), Transparency = 0.5, Size = part.Size, CFrame = part.CFrame, CastShadow = false,
+					}, workspace)
+					Util.Tween(g, 0.35, { Transparency = 1 })
+					Util.Clean(g, 0.4)
+				end
+			end
+		end)
+	end
+	Lib.Burst(hrp.Position, Color3.fromRGB(200, 230, 255), 12, 12, 0.6, 0.4)
+end
+
+-- Estrelinhas girando sobre a cabeça enquanto stun
+function E.Stun(d)
+	local head = d.Char and d.Char:FindFirstChild("Head")
+	if not head or not Lib.InRange(head.Position) then return end
+	local att = Util.New("Attachment", { Position = Vector3.new(0, 1.4, 0) }, head)
+	local e = Lib.Emitter(att, { Color = Color3.fromRGB(255, 240, 120), Rate = 12, Speed = NumberRange.new(0.5, 1.5), Lifetime = NumberRange.new(0.6, 1) })
+	task.delay(d.Duration or 1, function() e.Enabled = false; Util.Clean(att, 1) end)
+end
+
+function E.Confuse(d)
+	local head = d.Char and d.Char:FindFirstChild("Head")
+	if not head or not Lib.InRange(head.Position) then return end
+	local att = Util.New("Attachment", { Position = Vector3.new(0, 1.6, 0) }, head)
+	local e = Lib.Emitter(att, { Color = Color3.fromRGB(255, 150, 50), Color2 = Color3.fromRGB(255, 230, 120), Rate = 16, Speed = NumberRange.new(1, 3), Lifetime = NumberRange.new(0.8, 1.3), Acceleration = Vector3.new(0, 2, 0) })
+	task.delay(d.Duration or 4, function() e.Enabled = false; Util.Clean(att, 1.5) end)
+end
+
+function E.Heal(d)
+	local hrp = d.Char and d.Char:FindFirstChild("HumanoidRootPart")
+	if not hrp or not Lib.InRange(hrp.Position) then return end
+	Lib.Burst(hrp.Position, Color3.fromRGB(255, 120, 150), 30, 10, 0.7, 1.2, Color3.fromRGB(255, 255, 255))
+	Lib.Ring(hrp.Position - Vector3.new(0, 2.8, 0), Color3.fromRGB(255, 150, 170), 2, 10, 0.8, 0.2)
+end
+
+function E.ShieldHit(d)
+	if not Lib.InRange(d.Position) then return end
+	local c = Color3.fromRGB(100, 255, 160)
+	Lib.Burst(d.Position, c, 16, 14, 0.7, 0.4)
+	Lib.Ring(d.Position, c, 1, 6, 0.3, 0.12, true)
+end
+
+function E.ShieldBreak(d)
+	if not Lib.InRange(d.Position) then return end
+	local c = Color3.fromRGB(100, 255, 160)
+	Lib.Burst(d.Position, c, 80, 40, 1.2, 1, Color3.new(1, 1, 1))
+	Lib.Sphere(d.Position, c, d.Radius * 2, d.Radius * 3, 0.4, 0.6)
+	Lib.Shake(0.25, 0.25)
+end
+
+function E.ShieldFade(d)
+	if not Lib.InRange(d.Position) then return end
+	Lib.Burst(d.Position, Color3.fromRGB(100, 255, 160), 30, 14, 0.8, 0.8)
+end
+
+return E
+</ProtectedString>
+              </Properties>
+            </Item>
+            <Item class="ModuleScript" referent="RBX17">
+              <Properties>
+                <string name="Name">PowerFX</string>
+                <ProtectedString name="Source">--[[ Efeitos dos poderes de cada herói (somente visuais; a lógica está em ServerScriptService/.../Powers) ]]
+local RS = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+local CollectionService = game:GetService("CollectionService")
+local Shared = RS:WaitForChild("MiraculousShared")
+local Config = require(Shared.Config)
+local Util = require(Shared.Util)
+local Lib = require(Shared.VFX.VFXLib)
+
+local E = {}
+local RED, BLACK = Color3.fromRGB(235, 25, 45), Color3.fromRGB(15, 15, 18)
+
+local function hand(char)
+	return char and (char:FindFirstChild("Right Arm") or char:FindFirstChild("HumanoidRootPart"))
+end
+local function root(char) return char and char:FindFirstChild("HumanoidRootPart") end
+local function feetOf(pos) return pos - Vector3.new(0, 2.8, 0) end
+
+-- Corre uma função por frame durante `time` segundos; f(t01) -&gt; false para encerrar antes
+local function animate(time, f)
+	local t0 = os.clock()
+	local conn
+	conn = RunService.RenderStepped:Connect(function()
+		local t = (os.clock() - t0) / time
+		if t &gt;= 1 or f(t) == false then conn:Disconnect() end
+	end)
+end
+
+------------------------------------------------------------------ LADYBUG
+function E.LuckyCharm(d)
+	local pos = d.Position
+	if not Lib.InRange(pos) then return end
+	local c = d.Color or RED
+	Lib.Sound("LuckyCharm")
+	Lib.Flash(RED, 0.3, 0.7)
+	Lib.Ring(feetOf(pos - Vector3.new(0, 3, 0)), c, 2, 16, 0.7, 0.25)
+	-- bola vermelha com bolinhas pretas desce girando e some em brilho
+	local ball = Util.New("Part", { Shape = Enum.PartType.Ball, Size = Vector3.one * 2.4, Anchored = true, CanCollide = false,
+		CanQuery = false, Material = Enum.Material.Neon, Color = RED, CastShadow = false }, workspace)
+	local dots = {}
+	for i = 1, 7 do
+		dots[i] = Util.New("Part", { Shape = Enum.PartType.Ball, Size = Vector3.one * 0.55, Anchored = true, CanCollide = false,
+			CanQuery = false, Color = BLACK, Material = Enum.Material.SmoothPlastic, CastShadow = false }, workspace)
+	end
+	Util.New("PointLight", { Color = RED, Range = 18, Brightness = 3 }, ball)
+	local char = d.Char
+	animate(1.4, function(t)
+		local hr = root(char)
+		local p = pos:Lerp(hr and (hr.Position + Vector3.new(0, 1, 0)) or pos, t * t) + Vector3.new(0, math.sin(t * 12) * 0.4, 0)
+		ball.CFrame = CFrame.new(p) * CFrame.Angles(0, t * 14, 0)
+		for i, dot in ipairs(dots) do
+			local dir = Vector3.new(math.cos(i * 1.1), math.sin(i * 2.3), math.sin(i * 1.1)).Unit
+			dot.CFrame = ball.CFrame * CFrame.new(dir * 1.2)
+		end
+		ball.Transparency = t &gt; 0.85 and (t - 0.85) / 0.15 or 0
+		for _, dot in ipairs(dots) do dot.Transparency = ball.Transparency end
+		if t &gt; 0.99 then ball:Destroy(); for _, dot in ipairs(dots) do dot:Destroy() end end
+	end)
+	task.delay(1.4, function() Lib.Burst(pos, RED, 60, 28, 1.1, 1, BLACK) end)
+	Lib.Burst(pos, RED, 40, 20, 0.9, 1, Color3.new(1, 1, 1))
+end
+
+function E.LuckyVision(d)
+	local list = {}
+	local function mark(part)
+		local h = Util.New("Highlight", { Adornee = part, FillColor = RED, OutlineColor = Color3.new(1, 1, 1),
+			FillTransparency = 0.5, DepthMode = Enum.HighlightDepthMode.AlwaysOnTop }, part)
+		table.insert(list, h)
+	end
+	for _, p in ipairs(CollectionService:GetTagged("LuckyTarget")) do
+		if p:IsA("BasePart") or p:IsA("Model") then mark(p) end
+	end
+	for _, v in ipairs(CollectionService:GetTagged("AkumaVillain")) do
+		for _, part in ipairs(v:GetDescendants()) do
+			if part:IsA("BasePart") and part:GetAttribute("AkumaObject") then mark(part) end
+		end
+	end
+	Lib.Tint(Color3.fromRGB(255, 190, 190), -0.2, 0.6, d.Duration or 12)
+	task.delay(d.Duration or 12, function() for _, h in ipairs(list) do h:Destroy() end end)
+end
+
+function E.MiraculousLadybug(d)
+	local pos, radius = d.Position, d.Radius or 90
+	Lib.Sound("MiraculousLadybug")
+	Lib.Flash(RED, 0.4, 1.2)
+	Lib.Pillar(feetOf(pos), RED, 4, 80, 1.2)
+	Lib.Ring(feetOf(pos), RED, 4, radius * 2, 1.6, 0.4)
+	Lib.Ring(feetOf(pos), Color3.new(1, 1, 1), 4, radius * 2.2, 1.9, 0.2)
+	-- enxame de joaninhas: sobe em espiral e depois se espalha pelo raio
+	local swarm = {}
+	for i = 1, Lib.Count(70) do
+		local p = Util.New("Part", { Shape = Enum.PartType.Ball, Size = Vector3.one * 0.8, Anchored = true, CanCollide = false,
+			CanQuery = false, Material = Enum.Material.Neon, Color = RED, CastShadow = false }, workspace)
+		local a0 = Util.New("Attachment", { Position = Vector3.new(0, 0.3, 0) }, p)
+		local a1 = Util.New("Attachment", { Position = Vector3.new(0, -0.3, 0) }, p)
+		Util.New("Trail", { Attachment0 = a0, Attachment1 = a1, Lifetime = 0.5, LightEmission = 1,
+			Color = ColorSequence.new(RED), Transparency = NumberSequence.new(0.2, 1) }, p)
+		swarm[i] = { part = p, ang = math.random() * math.pi * 2, rad = math.random() * 3, spd = 0.7 + math.random() }
+	end
+	animate(2.6, function(t)
+		for _, s in ipairs(swarm) do
+			local up = math.min(t / 0.35, 1)
+			local spread = math.max((t - 0.35) / 0.65, 0)
+			local r = s.rad + spread * radius
+			local a = s.ang + t * 8 * s.spd
+			s.part.Position = pos + Vector3.new(math.cos(a) * r, up * 40 * (1 - spread) + spread * math.sin(a * 2) * 6 + 2, math.sin(a) * r)
+			s.part.Transparency = spread &gt; 0.85 and (spread - 0.85) / 0.15 or 0
+		end
+		if t &gt; 0.99 then for _, s in ipairs(swarm) do s.part:Destroy() end end
+	end)
+	task.delay(1.2, function()
+		Lib.Burst(pos, Color3.fromRGB(255, 120, 150), 120, 80, 1.3, 1.6, Color3.new(1, 1, 1))
+		Lib.Sphere(pos, RED, 5, radius * 1.4, 1, 0.7)
+		Lib.Shake(0.3, 0.6)
+	end)
+end
+
+function E.Yoyo(d)
+	local h = hand(d.Char)
+	if not h or not Lib.InRange(d.To) then return end
+	local c = d.Color or RED
+	local from = h.Position
+	local line = Lib.Line(from, d.To, c, 0.2, nil)
+	local ball = Util.New("Part", { Shape = Enum.PartType.Ball, Size = Vector3.one * 1.1, Anchored = true, CanCollide = false,
+		CanQuery = false, Material = Enum.Material.Neon, Color = c, CFrame = CFrame.new(d.To) }, workspace)
+	animate(0.7, function()
+		local p0 = h.Position
+		line.Size = Vector3.new(0.2, 0.2, (d.To - p0).Magnitude)
+		line.CFrame = CFrame.lookAt(p0 + (d.To - p0) / 2, d.To)
+	end)
+	task.delay(0.7, function() line:Destroy(); ball:Destroy() end)
+	Lib.Burst(d.To, c, 20, 18, 0.7, 0.5)
+	Lib.Ring(d.To, c, 1, 6, 0.3, 0.15, true)
+end
+
+------------------------------------------------------------------ CAT NOIR
+local cataStops = {}
+function E.CataclysmCharge(d)
+	local h = hand(d.Char)
+	if not h then return end
+	local c = Color3.fromRGB(110, 255, 90)
+	Lib.Sound("Cataclysm", h)
+	Lib.Flash(Color3.fromRGB(30, 0, 40), 0.1, 0.6)
+	local att = Util.New("Attachment", { Position = Vector3.new(0, -1.1, 0) }, h)
+	local e1 = Lib.Emitter(att, { Color = BLACK, Color2 = Color3.fromRGB(70, 0, 90), Rate = 60, Speed = NumberRange.new(1, 4),
+		Lifetime = NumberRange.new(0.5, 1), LightEmission = 0.2, Texture = Config.VFX.Smoke,
+		Size = NumberSequence.new({ NumberSequenceKeypoint.new(0, 1.2), NumberSequenceKeypoint.new(1, 0) }) })
+	local e2 = Lib.Emitter(att, { Color = c, Rate = 40, Speed = NumberRange.new(2, 6), Lifetime = NumberRange.new(0.3, 0.7) })
+	local light = Util.New("PointLight", { Color = c, Range = 14, Brightness = 2 }, h)
+	local alive = true
+	task.spawn(function()
+		while alive and h.Parent do
+			local p = h.Position - Vector3.new(0, 1, 0)
+			Lib.Lightning(p, p + Util.RandomUnit() * 4, c, 4, 0.8, 0.12, 0.15)
+			task.wait(0.12)
+		end
+	end)
+	cataStops[d.Char] = function()
+		alive = false
+		e1.Enabled, e2.Enabled = false, false
+		light:Destroy()
+		Util.Clean(att, 1.2)
+	end
+	task.delay(d.Duration or 12, function() if cataStops[d.Char] then cataStops[d.Char](); cataStops[d.Char] = nil end end)
+end
+
+function E.CataclysmEnd(d)
+	if cataStops[d.Char] then cataStops[d.Char](); cataStops[d.Char] = nil end
+end
+
+function E.CataclysmHit(d)
+	if not Lib.InRange(d.Position) then return end
+	local c = Color3.fromRGB(110, 255, 90)
+	local s = d.Size or 8
+	Lib.Sphere(d.Position, BLACK, 1, s, 0.5, 0.2)
+	Lib.Sphere(d.Position, c, 1, s * 0.7, 0.35, 0.3)
+	Lib.Burst(d.Position, BLACK, 60, 18, 1.5, 1.2, Color3.fromRGB(80, 0, 100))
+	Lib.Burst(d.Position, c, 50, 30, 0.9, 0.9)
+	for _ = 1, 4 do Lib.Lightning(d.Position, d.Position + Util.RandomUnit() * s, c, 6, 1.2, 0.2, 0.4) end
+	Lib.Light(d.Position, c, 25, 4, 0.7)
+	Lib.Shake(0.45, 0.45)
+end
+
+function E.BatonLeap(d)
+	local r = root(d.Char)
+	if not r or not Lib.InRange(r.Position) then return end
+	local c = d.Color or Color3.fromRGB(120, 255, 80)
+	Lib.Ring(feetOf(r.Position), c, 2, 12, 0.45, 0.25)
+	Lib.Burst(feetOf(r.Position), c, 30, 28, 0.9, 0.6)
+	local att = Util.New("Attachment", {}, r)
+	local e = Lib.Emitter(att, { Color = c, Rate = 80, Speed = NumberRange.new(0, 2), Lifetime = NumberRange.new(0.4, 0.7) })
+	task.delay(0.9, function() e.Enabled = false; Util.Clean(att, 1) end)
+end
+
+function E.StaffSpin(d)
+	local r = root(d.Char)
+	if not r or not Lib.InRange(r.Position) then return end
+	local c = d.Color or Color3.fromRGB(120, 255, 80)
+	local rings = {}
+	for i = 1, 2 do
+		rings[i] = Util.New("Part", { Shape = Enum.PartType.Cylinder, Size = Vector3.new(0.15, 9 + i * 2, 9 + i * 2), Anchored = true,
+			CanCollide = false, CanQuery = false, Material = Enum.Material.Neon, Color = c, Transparency = 0.45, CastShadow = false }, workspace)
+	end
+	local dur = d.Duration or 1.5
+	animate(dur, function(t)
+		if not r.Parent then return false end
+		for i, ring in ipairs(rings) do
+			ring.CFrame = CFrame.new(r.Position) * CFrame.Angles(0, t * 30 * (i == 1 and 1 or -1), 0) * CFrame.Angles(0, 0, math.rad(90 + i * 8))
+			ring.Transparency = 0.45 + t * 0.55
+		end
+		if t &gt; 0.98 then for _, ring in ipairs(rings) do ring:Destroy() end end
+	end)
+	Lib.Burst(r.Position, c, 30, 30, 0.8, 0.6)
+end
+
+------------------------------------------------------------------ RENA ROUGE
+local ORANGE = Color3.fromRGB(255, 150, 50)
+function E.Mirage(d)
+	local pos, radius = d.Position, d.Radius or 40
+	if not Lib.InRange(pos) then return end
+	Lib.Flash(ORANGE, 0.25, 0.8)
+	Lib.Sphere(pos, ORANGE, 2, radius * 1.2, 1.0, 0.75)
+	for i = 1, 4 do
+		task.delay(i * 0.12, function() Lib.Ring(feetOf(pos), i % 2 == 0 and Color3.fromRGB(255, 230, 150) or ORANGE, 2, radius * 1.5, 0.9, 0.2) end)
+	end
+	Lib.Burst(pos, ORANGE, 100, 40, 1.2, 1.4, Color3.fromRGB(255, 240, 180))
+	Lib.Light(pos, ORANGE, 40, 4, 1)
+end
+
+function E.MirageAppear(d)
+	if not Lib.InRange(d.Position) then return end
+	Lib.Burst(d.Position + Vector3.new(0, 2, 0), d.Color or ORANGE, 40, 14, 1, 0.9, Color3.new(1, 1, 1))
+	Lib.Ring(feetOf(d.Position + Vector3.new(0, 3, 0)), d.Color or ORANGE, 1, 9, 0.5, 0.2)
+end
+
+function E.FluteBlast(d)
+	local r = root(d.Char)
+	if not r or not Lib.InRange(r.Position) then return end
+	local c = d.Color or ORANGE
+	for i = 1, 5 do
+		task.delay(i * 0.05, function()
+			local cf = r.CFrame * CFrame.new(0, 0.5, -3 - i * 4)
+			local ring = Lib.Ring(cf.Position, c, 2, 10 + i * 2, 0.4, 0.2, true)
+			ring.CFrame = cf * CFrame.Angles(0, math.rad(90), 0) * CFrame.Angles(0, 0, math.rad(90)) * CFrame.Angles(0, 0, math.rad(-90))
+		end)
+	end
+	Lib.Burst((r.CFrame * CFrame.new(0, 1, -6)).Position, c, 40, 40, 0.9, 0.7, Color3.new(1, 1, 1))
+end
+
+------------------------------------------------------------------ CARAPACE
+local GREEN = Color3.fromRGB(100, 255, 160)
+function E.Shellter(d)
+	local pos, radius = d.Position, d.Radius or 22
+	if not Lib.InRange(pos) then return end
+	Lib.Flash(GREEN, 0.25, 0.6)
+	Lib.Sphere(pos, GREEN, 2, radius * 2, 0.5, 0.5)
+	for i = 0, 4 do
+		task.delay(i * 0.08, function() Lib.Ring(feetOf(pos) + Vector3.new(0, i * radius * 0.4, 0), GREEN, 2, radius * 1.8, 0.7, 0.2) end)
+	end
+	Lib.Burst(pos, GREEN, 80, 45, 1.2, 1.2, Color3.new(1, 1, 1))
+	Lib.Light(pos, GREEN, 40, 5, 1)
+	Lib.Shake(0.2, 0.4)
+end
+
+function E.ShellSpin(d)
+	local r = root(d.Char)
+	if not r or not Lib.InRange(r.Position) then return end
+	local c = d.Color or GREEN
+	local ring = Util.New("Part", { Shape = Enum.PartType.Cylinder, Size = Vector3.new(0.3, 8, 8), Anchored = true, CanCollide = false,
+		CanQuery = false, Material = Enum.Material.Neon, Color = c, Transparency = 0.4, CastShadow = false }, workspace)
+	local att = Util.New("Attachment", {}, r)
+	local e = Lib.Emitter(att, { Color = c, Rate = 90, Speed = NumberRange.new(0, 3), Lifetime = NumberRange.new(0.3, 0.6) })
+	animate(d.Duration or 0.9, function(t)
+		if not r.Parent then return false end
+		ring.CFrame = CFrame.new(r.Position) * CFrame.Angles(0, t * 40, 0) * CFrame.Angles(0, 0, math.rad(80))
+		if t &gt; 0.97 then ring:Destroy(); e.Enabled = false; Util.Clean(att, 0.8) end
+	end)
+end
+
+------------------------------------------------------------------ VIPERION
+local TEAL = Color3.fromRGB(90, 255, 230)
+function E.SecondChance(d)
+	local pos = d.Position
+	local c = d.Color or TEAL
+	Lib.Sound("Cataclysm") -- opcional: troque por seu som em Config.Sounds
+	Lib.Tint(Color3.fromRGB(150, 255, 240), -0.6, 1.0, d.Duration or 2)
+	Lib.Flash(c, 0.2, 0.5)
+	-- anéis que CONVERGEM (efeito de "voltar no tempo") + relógio girando ao contrário
+	for i = 0, 5 do
+		task.delay(i * 0.18, function() Lib.Ring(feetOf(pos) + Vector3.new(0, i * 0.5, 0), c, 70 - i * 6, 2, 0.8, 0.3) end)
+	end
+	Lib.Sphere(pos, c, 90, 2, 1.0, 0.8)
+	local clock = Util.New("Part", { Shape = Enum.PartType.Cylinder, Size = Vector3.new(0.2, 14, 14), Anchored = true, CanCollide = false,
+		CanQuery = false, Material = Enum.Material.Neon, Color = c, Transparency = 0.4, CastShadow = false }, workspace)
+	local hand1 = Util.New("Part", { Size = Vector3.new(0.3, 0.3, 6), Anchored = true, CanCollide = false, CanQuery = false,
+		Material = Enum.Material.Neon, Color = Color3.new(1, 1, 1), CastShadow = false }, workspace)
+	animate(d.Duration or 2, function(t)
+		local base = CFrame.new(pos + Vector3.new(0, 14, 0)) * CFrame.Angles(math.rad(90), 0, 0)
+		clock.CFrame = base * CFrame.Angles(0, 0, math.rad(90))
+		hand1.CFrame = base * CFrame.Angles(0, -t * 40, 0) * CFrame.new(0, -0.2, -3)
+		local a = 1 - math.clamp((t - 0.8) / 0.2, 0, 1)
+		clock.Transparency = 1 - 0.6 * a
+		if t &gt; 0.98 then clock:Destroy(); hand1:Destroy() end
+	end)
+	task.delay(1.0, function()
+		Lib.Burst(pos, c, 120, 60, 1.3, 1.4, Color3.new(1, 1, 1))
+		Lib.Sphere(pos, Color3.new(1, 1, 1), 2, 40, 0.6, 0.3)
+		Lib.Shake(0.4, 0.5)
+	end)
+end
+
+function E.LyreWave(d)
+	local r = root(d.Char)
+	if not r or not Lib.InRange(r.Position) then return end
+	local c = d.Color or TEAL
+	for i = 1, 4 do
+		task.delay(i * 0.07, function()
+			local cf = r.CFrame * CFrame.new(0, 0.5, -3 - i * 3)
+			local ring = Lib.Ring(cf.Position, c, 3, 9 + i * 2, 0.45, 0.2)
+			ring.CFrame = cf * CFrame.Angles(0, 0, math.rad(90)) * CFrame.Angles(math.rad(90), 0, 0)
+		end)
+	end
+	Lib.Burst((r.CFrame * CFrame.new(0, 1, -4)).Position, c, 30, 30, 0.8, 0.6)
+end
+
+------------------------------------------------------------------ RYUKO
+local STORM = Color3.fromRGB(190, 225, 255)
+function E.LightningWarn(d)
+	if not Lib.InRange(d.Position) then return end
+	local pos, r = feetOf(d.Position + Vector3.new(0, 2.8, 0)), d.Radius or 10
+	local ring = Lib.Ring(pos, STORM, r * 2, r * 2, d.Delay or 0.7, 0.2)
+	Lib.Ring(pos, STORM, r * 2.4, r * 0.4, d.Delay or 0.7, 0.15)
+	Lib.Burst(pos, STORM, 20, 6, 0.6, d.Delay or 0.7)
+end
+
+function E.LightningStrike(d)
+	local pos = d.Position
+	if not Lib.InRange(pos) then return end
+	Lib.Sound("Lightning")
+	local top = pos + Vector3.new(0, 90, 0)
+	for _ = 1, 3 do Lib.Lightning(top + Vector3.new(math.random(-6, 6), 0, math.random(-6, 6)), pos, STORM, 14, 4, 0.7, 0.35) end
+	Lib.Lightning(top, pos, Color3.new(1, 1, 1), 14, 3, 0.35, 0.3)
+	Lib.Flash(Color3.new(1, 1, 1), 0.6, 0.5)
+	Lib.Sphere(pos, STORM, 2, (d.Radius or 10) * 2, 0.3, 0.2)
+	Lib.Ring(feetOf(pos + Vector3.new(0, 2.8, 0)), STORM, 2, (d.Radius or 10) * 3, 0.5, 0.3)
+	Lib.Burst(pos, STORM, 70, 50, 1.1, 0.9, Color3.new(1, 1, 1))
+	Lib.Light(pos, STORM, 50, 8, 0.6)
+	Lib.Shake(0.5, 0.45)
+end
+
+function E.Gale(d)
+	local r = root(d.Char)
+	if not r or not Lib.InRange(r.Position) then return end
+	local rng = Random.new()
+	for i = 1, Lib.Count(14) do
+		local off = Vector3.new(rng:NextNumber(-7, 7), rng:NextNumber(-2, 4), 0)
+		local streak = Util.New("Part", { Size = Vector3.new(0.15, 0.15, 5), Anchored = true, CanCollide = false, CanQuery = false,
+			Material = Enum.Material.Neon, Color = Color3.fromRGB(220, 255, 240), Transparency = 0.3, CastShadow = false,
+			CFrame = r.CFrame * CFrame.new(off + Vector3.new(0, 0, -3)) }, workspace)
+		Util.Tween(streak, 0.55, { CFrame = r.CFrame * CFrame.new(off + Vector3.new(0, 0, -28)), Transparency = 1 }, Enum.EasingStyle.Quad)
+		Util.Clean(streak, 0.6)
+	end
+	Lib.Burst((r.CFrame * CFrame.new(0, 1, -5)).Position, Color3.fromRGB(220, 255, 240), 40, 50, 1, 0.7)
+end
+
+function E.Wave(d)
+	local r = root(d.Char)
+	if not r or not Lib.InRange(r.Position) then return end
+	local blue = Color3.fromRGB(70, 170, 255)
+	local cf = CFrame.lookAt(r.Position, r.Position + d.Direction)
+	local swell = Util.New("Part", { Shape = Enum.PartType.Ball, Size = Vector3.new(10, 6, 4), Anchored = true, CanCollide = false,
+		CanQuery = false, Material = Enum.Material.Neon, Color = blue, Transparency = 0.5, CastShadow = false, CFrame = cf * CFrame.new(0, -1, -4) }, workspace)
+	Util.Tween(swell, 0.9, { CFrame = cf * CFrame.new(0, 0, -60), Size = Vector3.new(16, 8, 6), Transparency = 1 }, Enum.EasingStyle.Quad)
+	Util.Clean(swell, 1)
+	Lib.Burst((cf * CFrame.new(0, 0, -5)).Position, blue, 60, 35, 1.2, 0.9, Color3.new(1, 1, 1))
+	Lib.Ring(feetOf(r.Position), blue, 2, 14, 0.5, 0.25)
+end
+
+function E.Flame(d)
+	local pos = d.Position
+	if not Lib.InRange(pos) then return end
+	local fire, ember = Color3.fromRGB(255, 120, 30), Color3.fromRGB(255, 220, 90)
+	local a = Util.Anchor(feetOf(pos) + Vector3.new(0, 0.5, 0))
+	local e = Lib.Emitter(a, { Texture = Config.VFX.Fire, Color = fire, Color2 = ember, Rate = 160, Speed = NumberRange.new(8, 18),
+		Lifetime = NumberRange.new(0.5, 1), Spread = Vector2.new(180, 40), Direction = Enum.NormalId.Top,
+		Size = NumberSequence.new({ NumberSequenceKeypoint.new(0, 2.6), NumberSequenceKeypoint.new(1, 0) }),
+		Acceleration = Vector3.new(0, 6, 0) })
+	Lib.Ring(feetOf(pos), fire, 3, 30, 0.6, 0.4)
+	Lib.Ring(feetOf(pos), ember, 3, 24, 0.5, 0.2)
+	Lib.Sphere(pos, fire, 3, 24, 0.5, 0.5)
+	Lib.Light(pos, fire, 35, 5, 1.8)
+	Lib.Shake(0.25, 0.35)
+	task.delay(1.8, function() e.Enabled = false end)
+	Util.Clean(a, 3)
+end
+
+return E
+</ProtectedString>
+              </Properties>
+            </Item>
+            <Item class="ModuleScript" referent="RBX18">
+              <Properties>
+                <string name="Name">Transform</string>
+                <ProtectedString name="Source">--[[ Efeitos de transformação/destransformação (cinematográficos, só por script) ]]
+local RS = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+local Shared = RS:WaitForChild("MiraculousShared")
+local Config = require(Shared.Config)
+local Util = require(Shared.Util)
+local Registry = require(Shared.MiraculousRegistry)
+local Lib = require(Shared.VFX.VFXLib)
+
+local E = {}
+
+-- Kwami: usa seu modelo (ReplicatedStorage/Assets/Kwamis/&lt;Nome&gt;) ou gera um orbe luminoso
+local function makeKwami(hero)
+	local assets = RS:FindFirstChild(Config.Folders.Assets)
+	local folder = assets and assets:FindFirstChild("Kwamis")
+	local src = folder and folder:FindFirstChild(hero.Kwami.Name)
+	local model
+	if src and src:IsA("Model") then
+		model = src:Clone()
+		for _, d in ipairs(model:GetDescendants()) do
+			if d:IsA("BasePart") then d.Anchored = true; d.CanCollide = false; d.CanQuery = false end
+		end
+		model.Parent = workspace
+		return model, function(cf) model:PivotTo(cf) end
+	end
+	local orb = Util.New("Part", {
+		Shape = Enum.PartType.Ball, Size = Vector3.one * 1.3, Anchored = true, CanCollide = false, CanQuery = false,
+		Material = Enum.Material.Neon, Color = hero.Colors.Glow, CastShadow = false,
+	}, workspace)
+	local a0 = Util.New("Attachment", { Position = Vector3.new(0, 0.5, 0) }, orb)
+	local a1 = Util.New("Attachment", { Position = Vector3.new(0, -0.5, 0) }, orb)
+	Util.New("Trail", { Attachment0 = a0, Attachment1 = a1, Lifetime = 0.6, LightEmission = 1,
+		Color = ColorSequence.new(hero.Colors.Glow), Transparency = NumberSequence.new(0.1, 1) }, orb)
+	Util.New("PointLight", { Color = hero.Colors.Glow, Range = 14, Brightness = 2 }, orb)
+	Lib.Emitter(orb, { Color = hero.Colors.Glow, Rate = 25, Speed = NumberRange.new(1, 3), Lifetime = NumberRange.new(0.4, 0.8) })
+	return orb, function(cf) orb.CFrame = cf end
+end
+
+local function kwamiFlight(char, hero, dur)
+	local head = char:FindFirstChild("Head")
+	if not head then return end
+	local obj, setCF = makeKwami(hero)
+	local t0 = os.clock()
+	local flyTime = dur * 0.42
+	local conn
+	conn = RunService.RenderStepped:Connect(function()
+		local t = (os.clock() - t0) / flyTime
+		if t &gt;= 1 or not head.Parent then
+			conn:Disconnect()
+			obj:Destroy()
+			if head.Parent then
+				Lib.Sphere(head.Position, hero.Colors.Glow, 1, 7, 0.5)
+				Lib.Burst(head.Position, hero.Colors.Glow, 40, 25, 0.9, 0.8)
+				Lib.Light(head.Position, hero.Colors.Glow, 25, 4, 0.6)
+			end
+			return
+		end
+		local ang = t * math.pi * 3
+		local r = 6 * (1 - t) + 0.2
+		local pos = head.Position + Vector3.new(math.cos(ang) * r, 1 + (1 - t) * 3 + math.sin(ang * 1.5), math.sin(ang) * r)
+		setCF(CFrame.lookAt(pos, head.Position))
+	end)
+end
+
+function E.Transform(d)
+	local char = d.Char
+	local hrp = char and char:FindFirstChild("HumanoidRootPart")
+	local hero = Registry.Get(d.HeroId)
+	if not (hrp and hero) or not Lib.InRange(hrp.Position) then return end
+	local dur = d.Duration or Config.Transform.Duration
+	local swap = dur * Config.Transform.SuitSwapAt
+	local c = hero.Colors.Glow
+	local feet = hrp.Position - Vector3.new(0, 2.8, 0)
+	Lib.Sound("Transform", hrp)
+
+	-- fase 1: kwami voa até o Miraculous e energia começa a girar
+	kwamiFlight(char, hero, dur)
+	local stopAura = Lib.Aura(char, c, 20)
+	Lib.Spiral(char, c, swap, 6, 4.5, 7)
+	Lib.Spiral(char, hero.Colors.Primary, swap, 4, 3.2, 6)
+	Lib.Ring(feet, c, 2, 14, 0.9, 0.3)
+	task.delay(swap * 0.35, function() Lib.Ring(feet, c, 2, 18, 0.9, 0.3); Lib.Light(hrp.Position, c, 22, 3, 1) end)
+	task.delay(swap * 0.7, function() Lib.Ring(feet, hero.Colors.Primary, 2, 22, 0.8, 0.3); Lib.Shake(0.15, 0.6) end)
+
+	-- fase 2: clímax (troca de traje acontece no servidor neste instante)
+	task.delay(swap, function()
+		if not hrp.Parent then return end
+		local pos = hrp.Position
+		Lib.Flash(c, 0.55, 0.7)
+		Lib.Sphere(pos, Color3.new(1, 1, 1), 3, 20, 0.45, 0.1)
+		Lib.Sphere(pos, c, 3, 30, 0.7, 0.4)
+		Lib.Pillar(feet, c, 3, 60, 0.9)
+		for i = 1, 3 do Lib.Ring(feet + Vector3.new(0, i * 0.2, 0), i == 2 and hero.Colors.Primary or c, 3, 12 + i * 10, 0.5 + i * 0.15, 0.4) end
+		Lib.Burst(pos, c, 90, 45, 1.3, 1.2, hero.Colors.Primary)
+		Lib.Burst(pos, Color3.new(1, 1, 1), 40, 25, 0.8, 0.9)
+		Lib.Light(pos, c, 40, 6, 1.0)
+		Lib.Shake(0.5, 0.5)
+		stopAura()
+	end)
+
+	-- fase 3: pose final com brilho residual
+	task.delay(swap + 0.1, function()
+		if not hrp.Parent then return end
+		local stop = Lib.Aura(char, hero.Colors.Primary, 35)
+		task.delay(dur - swap, stop)
+		Lib.Ring(feet, hero.Colors.Primary, 4, 26, 1.2, 0.2)
+	end)
+end
+
+function E.Detransform(d)
+	local char = d.Char
+	local hrp = char and char:FindFirstChild("HumanoidRootPart")
+	local hero = Registry.Get(d.HeroId)
+	if not (hrp and hero) or not Lib.InRange(hrp.Position) then return end
+	local dur = d.Duration or Config.Transform.DetransformDuration
+	local c = hero.Colors.Glow
+	local feet = hrp.Position - Vector3.new(0, 2.8, 0)
+	Lib.Sound("Detransform", hrp)
+	local stop = Lib.Aura(char, c, 50)
+	Lib.Spiral(char, c, dur * 0.6, 5, 3, 6)
+	Lib.Ring(feet, c, 24, 2, dur * 0.6, 0.3)
+	task.delay(dur * 0.6, function()
+		stop()
+		if not hrp.Parent then return end
+		local pos = hrp.Position
+		Lib.Flash(c, 0.35, 0.5)
+		Lib.Sphere(pos, c, 2, 16, 0.5, 0.3)
+		Lib.Burst(pos, c, 60, 30, 1, 1)
+		Lib.Light(pos, c, 30, 4, 0.7)
+		-- kwami sai do Miraculous, cansado
+		local head = char:FindFirstChild("Head")
+		if head then
+			local obj, setCF = makeKwami(hero)
+			local t0 = os.clock()
+			local conn
+			conn = RunService.RenderStepped:Connect(function()
+				local t = (os.clock() - t0) / 1.2
+				if t &gt;= 1 or not head.Parent then conn:Disconnect(); obj:Destroy() return end
+				setCF(CFrame.new(head.Position + Vector3.new(math.sin(t * 6) * 2 * t, 1.5 + t * 4, 2 * t)))
+			end)
+		end
+	end)
+end
+
+return E
+</ProtectedString>
+              </Properties>
+            </Item>
+          </Item>
+          <Item class="ModuleScript" referent="RBX19">
+            <Properties>
+              <string name="Name">VFXLib</string>
+              <ProtectedString name="Source">--[[
+	VFXLib (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/VFX/VFXLib
+	Biblioteca de efeitos 100% por script (sem IDs). Rodar SÓ no cliente.
+	Respeita desempenho: escala de partículas menor em celular, limite de distância.
+]]
+local RS = game:GetService("ReplicatedStorage")
+local Lighting = game:GetService("Lighting")
+local UIS = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+local Players = game:GetService("Players")
+local Debris = game:GetService("Debris")
+
+local Config = require(RS.MiraculousShared.Config)
+local Util = require(RS.MiraculousShared.Util)
+
+local Lib = {}
+local isMobile = UIS.TouchEnabled and not UIS.KeyboardEnabled
+Lib.Scale = isMobile and Config.VFX.MobileScale or 1
+
+local function n(x) return math.max(1, math.floor(x * Lib.Scale + 0.5)) end
+Lib.Count = n
+
+function Lib.InRange(pos)
+	local cam = workspace.CurrentCamera
+	return cam and (cam.CFrame.Position - pos).Magnitude &lt;= Config.VFX.MaxDistance
+end
+
+function Lib.Emitter(parent, o)
+	local e = Instance.new("ParticleEmitter")
+	e.Texture = o.Texture or Config.VFX.Sparkle
+	e.Color = ColorSequence.new(o.Color or Color3.new(1, 1, 1), o.Color2 or o.Color or Color3.new(1, 1, 1))
+	e.LightEmission = o.LightEmission or 1
+	e.Size = o.Size or NumberSequence.new({ NumberSequenceKeypoint.new(0, 0.6), NumberSequenceKeypoint.new(1, 0) })
+	e.Transparency = o.Transparency or NumberSequence.new({ NumberSequenceKeypoint.new(0, 0), NumberSequenceKeypoint.new(1, 1) })
+	e.Lifetime = o.Lifetime or NumberRange.new(0.6, 1.1)
+	e.Speed = o.Speed or NumberRange.new(5, 12)
+	e.SpreadAngle = o.Spread or Vector2.new(180, 180)
+	e.Rate = (o.Rate or 0) * Lib.Scale
+	e.Drag = o.Drag or 0
+	e.Acceleration = o.Acceleration or Vector3.zero
+	e.Rotation = NumberRange.new(0, 360)
+	e.RotSpeed = NumberRange.new(-90, 90)
+	e.EmissionDirection = o.Direction or Enum.NormalId.Top
+	e.Enabled = o.Rate ~= nil and o.Rate &gt; 0
+	e.Parent = parent
+	return e
+end
+
+-- Explosão de partículas num ponto
+function Lib.Burst(pos, color, count, speed, size, life, color2)
+	local a = Util.Anchor(pos)
+	local e = Lib.Emitter(a, {
+		Color = color, Color2 = color2, Speed = NumberRange.new(speed * 0.5, speed), Lifetime = NumberRange.new(life * 0.6, life),
+		Size = NumberSequence.new({ NumberSequenceKeypoint.new(0, size), NumberSequenceKeypoint.new(1, 0) }),
+	})
+	e:Emit(n(count))
+	Debris:AddItem(a, life + 0.5)
+	return a
+end
+
+-- Anel horizontal que expande
+function Lib.Ring(pos, color, startSize, endSize, time, thickness, vertical)
+	local p = Util.New("Part", {
+		Shape = Enum.PartType.Cylinder, Anchored = true, CanCollide = false, CanQuery = false, CanTouch = false,
+		Material = Enum.Material.Neon, Color = color, Transparency = 0.2, CastShadow = false,
+		Size = Vector3.new(thickness or 0.4, startSize, startSize),
+		CFrame = CFrame.new(pos) * (vertical and CFrame.Angles(0, 0, 0) or CFrame.Angles(0, 0, math.rad(90))),
+	}, workspace)
+	Util.Tween(p, time, { Size = Vector3.new(thickness or 0.4, endSize, endSize), Transparency = 1 }, Enum.EasingStyle.Quint)
+	Debris:AddItem(p, time + 0.1)
+	return p
+end
+
+-- Esfera que cresce e some
+function Lib.Sphere(pos, color, startSize, endSize, time, transparency)
+	local p = Util.New("Part", {
+		Shape = Enum.PartType.Ball, Anchored = true, CanCollide = false, CanQuery = false, CanTouch = false,
+		Material = Enum.Material.Neon, Color = color, Transparency = transparency or 0.3, CastShadow = false,
+		Size = Vector3.one * startSize, CFrame = CFrame.new(pos),
+	}, workspace)
+	Util.Tween(p, time, { Size = Vector3.one * endSize, Transparency = 1 }, Enum.EasingStyle.Quad)
+	Debris:AddItem(p, time + 0.1)
+	return p
+end
+
+-- Coluna de luz vertical
+function Lib.Pillar(pos, color, radius, height, time)
+	local p = Util.New("Part", {
+		Shape = Enum.PartType.Cylinder, Anchored = true, CanCollide = false, CanQuery = false, CanTouch = false,
+		Material = Enum.Material.Neon, Color = color, Transparency = 0.5, CastShadow = false,
+		Size = Vector3.new(0.5, radius * 2, radius * 2), CFrame = CFrame.new(pos + Vector3.new(0, height / 2, 0)) * CFrame.Angles(0, 0, math.rad(90)),
+	}, workspace)
+	p.Size = Vector3.new(height, radius * 2, radius * 2)
+	Util.Tween(p, time, { Size = Vector3.new(height, radius * 0.1, radius * 0.1), Transparency = 1 }, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+	Debris:AddItem(p, time + 0.1)
+	return p
+end
+
+-- Linha neon entre dois pontos
+function Lib.Line(p0, p1, color, width, time)
+	local d = (p1 - p0)
+	local p = Util.New("Part", {
+		Anchored = true, CanCollide = false, CanQuery = false, CanTouch = false, Material = Enum.Material.Neon,
+		Color = color, CastShadow = false, Size = Vector3.new(width, width, d.Magnitude),
+		CFrame = CFrame.lookAt(p0 + d / 2, p1),
+	}, workspace)
+	if time then
+		Util.Tween(p, time, { Transparency = 1, Size = Vector3.new(0.05, 0.05, d.Magnitude) })
+		Debris:AddItem(p, time + 0.1)
+	end
+	return p
+end
+
+-- Raio ziguezague
+function Lib.Lightning(p0, p1, color, segments, jitter, width, time)
+	local rng = Random.new()
+	local d = p1 - p0
+	local prev = p0
+	segments = n(segments or 10)
+	local folder = Util.New("Folder", {}, workspace)
+	for i = 1, segments do
+		local t = i / segments
+		local pt = p0 + d * t
+		if i &lt; segments then
+			pt += Vector3.new(rng:NextNumber(-jitter, jitter), rng:NextNumber(-jitter, jitter), rng:NextNumber(-jitter, jitter))
+		end
+		local seg = Lib.Line(prev, pt, color, width, nil)
+		seg.Parent = folder
+		prev = pt
+	end
+	for _, s in ipairs(folder:GetChildren()) do
+		Util.Tween(s, time, { Transparency = 1, Size = Vector3.new(0.05, 0.05, s.Size.Z) })
+	end
+	Debris:AddItem(folder, time + 0.1)
+end
+
+-- Luz pontual temporária
+function Lib.Light(pos, color, range, brightness, time)
+	local a = Util.Anchor(pos)
+	local l = Util.New("PointLight", { Color = color, Range = range, Brightness = brightness }, a)
+	Util.Tween(l, time, { Brightness = 0, Range = 0 })
+	Debris:AddItem(a, time + 0.1)
+end
+
+-- Flash de tela (Lighting local, não é ScreenGui)
+local flashCC
+function Lib.Flash(color, intensity, time)
+	if not flashCC then
+		flashCC = Util.New("ColorCorrectionEffect", { Name = "MiraculousFlash" }, Lighting)
+	end
+	flashCC.TintColor = color or Color3.new(1, 1, 1)
+	flashCC.Brightness = intensity or 0.4
+	flashCC.Contrast = 0
+	Util.Tween(flashCC, time or 0.5, { Brightness = 0, TintColor = Color3.new(1, 1, 1) })
+end
+
+local tintCC
+function Lib.Tint(color, saturation, time, hold)
+	if not tintCC then
+		tintCC = Util.New("ColorCorrectionEffect", { Name = "MiraculousTint" }, Lighting)
+	end
+	Util.Tween(tintCC, time * 0.3, { TintColor = color, Saturation = saturation })
+	task.delay(hold or time, function()
+		Util.Tween(tintCC, time, { TintColor = Color3.new(1, 1, 1), Saturation = 0 })
+	end)
+end
+
+-- Tremor de câmera via CameraOffset (funciona com câmera padrão)
+function Lib.Shake(intensity, time)
+	local hum = Players.LocalPlayer.Character and Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+	if not hum then return end
+	local rng = Random.new()
+	local t0 = os.clock()
+	local conn
+	conn = RunService.RenderStepped:Connect(function()
+		local k = 1 - (os.clock() - t0) / time
+		if k &lt;= 0 or not hum.Parent then
+			conn:Disconnect()
+			if hum.Parent then hum.CameraOffset = Vector3.zero end
+			return
+		end
+		hum.CameraOffset = Vector3.new(rng:NextNumber(-1, 1), rng:NextNumber(-1, 1), 0) * intensity * k
+	end)
+end
+
+-- Aura contínua em um Character; retorna função para parar
+function Lib.Aura(char, color, rate)
+	local hrp = char:FindFirstChild("HumanoidRootPart")
+	if not hrp then return function() end end
+	local att = Util.New("Attachment", { Name = "FXAura" }, hrp)
+	local e = Lib.Emitter(att, {
+		Color = color, Rate = rate or 30, Speed = NumberRange.new(1, 4), Lifetime = NumberRange.new(0.8, 1.4),
+		Acceleration = Vector3.new(0, 4, 0), Spread = Vector2.new(180, 180),
+		Size = NumberSequence.new({ NumberSequenceKeypoint.new(0, 0.7), NumberSequenceKeypoint.new(1, 0) }),
+	})
+	local light = Util.New("PointLight", { Color = color, Range = 14, Brightness = 1.5 }, hrp)
+	return function()
+		e.Enabled = false
+		Debris:AddItem(att, 1.6)
+		Util.Tween(light, 0.5, { Brightness = 0 })
+		Debris:AddItem(light, 0.6)
+	end
+end
+
+-- Esferas orbitando com rastro, subindo em espiral. Retorna cleanup.
+function Lib.Spiral(char, color, time, count, radius, height)
+	local hrp = char:FindFirstChild("HumanoidRootPart")
+	if not hrp then return end
+	count = n(count)
+	local orbs = {}
+	for i = 1, count do
+		local o = Util.New("Part", {
+			Shape = Enum.PartType.Ball, Size = Vector3.one * 0.7, Anchored = true, CanCollide = false, CanQuery = false,
+			Material = Enum.Material.Neon, Color = color, CastShadow = false,
+		}, workspace)
+		local a0 = Util.New("Attachment", { Position = Vector3.new(0, 0.3, 0) }, o)
+		local a1 = Util.New("Attachment", { Position = Vector3.new(0, -0.3, 0) }, o)
+		Util.New("Trail", {
+			Attachment0 = a0, Attachment1 = a1, Lifetime = 0.5, LightEmission = 1, Color = ColorSequence.new(color),
+			Transparency = NumberSequence.new(0.1, 1),
+		}, o)
+		orbs[i] = o
+	end
+	local t0 = os.clock()
+	local conn
+	conn = RunService.RenderStepped:Connect(function()
+		local t = (os.clock() - t0) / time
+		if t &gt;= 1 or not hrp.Parent then
+			conn:Disconnect()
+			for _, o in ipairs(orbs) do o:Destroy() end
+			return
+		end
+		local base = hrp.Position - Vector3.new(0, 2.5, 0)
+		for i, o in ipairs(orbs) do
+			local ang = t * 9 + i * (math.pi * 2 / count)
+			local r = radius * (1 - 0.5 * t)
+			local h = ((t * 1.2 + i / count) % 1) * height
+			o.Position = base + Vector3.new(math.cos(ang) * r, h, math.sin(ang) * r)
+		end
+	end)
+end
+
+-- Som opcional (só toca se o ID foi preenchido em Config.Sounds)
+function Lib.Sound(key, parent, volume)
+	local id = Config.Sounds[key]
+	if not id or id == "" then return end
+	local s = Util.New("Sound", { SoundId = id, Volume = volume or 1, RollOffMaxDistance = 150 }, parent or workspace)
+	s:Play()
+	Debris:AddItem(s, 8)
+end
+
+return Lib
+</ProtectedString>
+            </Properties>
+          </Item>
+        </Item>
+        <Item class="ModuleScript" referent="RBX20">
+          <Properties>
+            <string name="Name">ClientAPI</string>
+            <ProtectedString name="Source">--[[
+	ClientAPI (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/ClientAPI
+	É a PONTE entre as SUAS ScreenGuis e o jogo. Dentro de um LocalScript da sua UI:
+		local API = require(game.ReplicatedStorage.MiraculousShared.ClientAPI)
+		botao.Activated:Connect(function() API.Transform() end)
+	Funções: SelectMiraculous(id) -&gt; ok, msg | Transform() | Detransform() | UsePower(n) | Attack() | Block(bool)
+	         Dodge() | Purify() | GetAimPosition() | GetCooldownRemaining(powerId) | GetHero() | GetEnergy()
+	Evento:  API.Notified:Connect(function(texto) ... end)
+	Atributos do Player que sua UI pode ler/observar: veja StateService.
+]]
+local Players = game:GetService("Players")
+local RS = game:GetService("ReplicatedStorage")
+local UIS = game:GetService("UserInputService")
+
+local Config = require(script.Parent.Config)
+local Registry = require(script.Parent.MiraculousRegistry)
+
+local API = {}
+local player = Players.LocalPlayer
+local remotes = RS:WaitForChild(Config.RemoteFolderName)
+
+local notify = Instance.new("BindableEvent")
+API.Notified = notify.Event
+remotes:WaitForChild("Notify").OnClientEvent:Connect(function(text) notify:Fire(text) end)
+
+local heroesLoaded = false
+local function ensureRegistry()
+	if not heroesLoaded then
+		heroesLoaded = true
+		Registry.Init(script.Parent.Heroes)
+	end
+end
+
+function API.SelectMiraculous(id)
+	return remotes.SelectMiraculous:InvokeServer(id)
+end
+
+function API.Transform() remotes.TransformRequest:FireServer() end
+function API.Detransform() remotes.DetransformRequest:FireServer() end
+function API.Attack() remotes.Attack:FireServer() end
+function API.Block(on) remotes.Block:FireServer(on == true) end
+function API.Purify() remotes.Purify:FireServer() end
+
+function API.GetAimPosition()
+	local cam = workspace.CurrentCamera
+	local vp
+	if UIS.TouchEnabled and not UIS.MouseEnabled then
+		vp = cam.ViewportSize / 2
+	else
+		vp = UIS:GetMouseLocation()
+	end
+	local ray = cam:ViewportPointToRay(vp.X, vp.Y)
+	local rp = RaycastParams.new()
+	rp.FilterType = Enum.RaycastFilterType.Exclude
+	rp.FilterDescendantsInstances = { player.Character }
+	local res = workspace:Raycast(ray.Origin, ray.Direction * 500, rp)
+	return res and res.Position or (ray.Origin + ray.Direction * 200)
+end
+
+function API.UsePower(index)
+	if player:GetAttribute("IsVillain") then
+		remotes.VillainPower:FireServer(index, API.GetAimPosition())
+	else
+		remotes.UsePower:FireServer(index, API.GetAimPosition())
+	end
+end
+
+function API.Dodge()
+	local char = player.Character
+	local hum = char and char:FindFirstChildOfClass("Humanoid")
+	local dir = hum and hum.MoveDirection or Vector3.zero
+	if dir.Magnitude &lt; 0.1 and char then
+		local hrp = char:FindFirstChild("HumanoidRootPart")
+		dir = hrp and -hrp.CFrame.LookVector or Vector3.new(0, 0, 1)
+	end
+	remotes.Dodge:FireServer(dir)
+end
+
+function API.GetHero()
+	ensureRegistry()
+	local id = player:GetAttribute("HeroId") or player:GetAttribute("MiraculousId")
+	return id and Registry.Get(id) or nil
+end
+
+function API.GetAllHeroes()
+	ensureRegistry()
+	return Registry.All()
+end
+
+function API.GetCooldownRemaining(powerId)
+	local t = player:GetAttribute("Cd_" .. powerId)
+	if not t then return 0 end
+	return math.max(0, t - workspace:GetServerTimeNow())
+end
+
+function API.GetEnergy()
+	return player:GetAttribute("Energy") or 0, player:GetAttribute("MaxEnergy") or Config.Energy.Max
+end
+
+-- Atalho para HawkMoth (UI de administrador/teste): akumatiza um Model (NPC com a Tag configurada ou personagem)
+function API.Akumatize(targetModel, villainId)
+	remotes.HawkMothAkumatize:FireServer(targetModel, villainId)
+end
+
+return API
+</ProtectedString>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="RBX21">
+          <Properties>
+            <string name="Name">Config</string>
+            <ProtectedString name="Source">--[[
+	Config (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/Config
+	Todas as configurações editáveis do jogo ficam aqui.
+]]
+local Config = {}
+
+Config.Debug = false
+
+-- Nomes das pastas que VOCÊ preenche com seus modelos (o Main cria as pastas vazias se não existirem)
+Config.Folders = {
+	Costumes        = "Costumes",        -- ServerStorage/Costumes/&lt;Hero.Costume&gt;
+	Weapons         = "Weapons",         -- ServerStorage/Weapons/&lt;Hero.Weapon&gt; (Tool ou Accessory)
+	LuckyItems      = "LuckyItems",      -- ServerStorage/LuckyItems/&lt;qualquer Tool/Model/Part&gt;
+	AkumaObjects    = "AkumaObjects",    -- ServerStorage/AkumaObjects/&lt;Villain.Object&gt; (Accessory/Model/Part)
+	VillainCostumes = "VillainCostumes", -- ServerStorage/VillainCostumes/&lt;Villain.Costume&gt;
+	Assets          = "Assets",          -- ReplicatedStorage/Assets/Kwamis/&lt;NomeDoKwami&gt; (Model)
+}
+
+Config.RemoteFolderName = "MiraculousRemotes"
+Config.RemoteEvents = {
+	"TransformRequest", "DetransformRequest", "UsePower", "Attack", "Block", "Dodge",
+	"Purify", "VillainPower", "HawkMothAkumatize",
+	"PlayVFX", "PlayAnim", "Cinematic", "Launch", "Notify",
+}
+Config.RemoteFunctions = { "SelectMiraculous" }
+
+-- Posse do Miraculous: "Free" = qualquer jogador escolhe; "Attribute" = só se Player:GetAttribute("Owned_&lt;Id&gt;") == true
+Config.Ownership = { Mode = "Free", AttributePrefix = "Owned_" }
+Config.UniqueHolders = true -- só um jogador por Miraculous ao mesmo tempo
+
+Config.Transform = {
+	Duration = 4.4,          -- duração total da cena de transformação (s)
+	SuitSwapAt = 0.62,       -- fração da cena em que o traje é trocado
+	Cooldown = 3,            -- espera para se transformar de novo
+	DetransformDuration = 1.8,
+	TimerSeconds = 90,       -- tempo até destransformar após poder "StartsTimer" (Lucky Charm, Cataclysm...)
+	MaxTransformedSeconds = nil, -- nil = sem limite
+}
+
+Config.Energy = { Max = 100, RegenPerSecond = 4 }
+
+Config.Combat = {
+	PlayerVsPlayer = false,
+	Combo = {
+		MaxHits = 4, Window = 0.9, Cooldown = 0.34,
+		Damage = { 8, 8, 10, 16 },
+		Knockback = { 0, 0, 0, 55 },
+		Range = 7.5, Width = 6.5,
+		StunOnLast = 0.4,
+	},
+	Block = { Reduction = 0.7, PerfectWindow = 0.25, PerfectStun = 1.0, FrontDot = 0.0 },
+	Dodge = { Cooldown = 1.2, Invulnerable = 0.4, Speed = 70 },
+	MaxAimDistance = 400,
+	DummyTag = "Dummy",
+}
+
+Config.Rewind = { Seconds = 10, Interval = 0.25, MaxSeconds = 20 } -- Viperion
+
+Config.Akuma = {
+	LairPartName = "HawkMothLair",  -- Part opcional em workspace; se não existir, a borboleta vem do céu
+	FlightTime = 3.2,
+	ObjectHealth = 120,
+	PurifyRange = 45,
+	ReleasedTimeout = 30,           -- se não purificar a tempo, a akuma reinfecta o vilão
+	AllowAkumatizeHeroes = false,
+	HawkMothUserIds = {},           -- UserIds autorizados a akumatizar via Remote
+	StudioAllowAll = true,          -- no Studio qualquer um pode testar
+	NPCTag = "Akumatizable",        -- NPCs (Model com Humanoid) com esta Tag podem ser akumatizados
+	Auto = { Enabled = false, Interval = 120 },
+}
+
+Config.Keys = {
+	Transform = Enum.KeyCode.T, Detransform = Enum.KeyCode.Y,
+	Power1 = Enum.KeyCode.Z, Power2 = Enum.KeyCode.X, Power3 = Enum.KeyCode.C, Power4 = Enum.KeyCode.V,
+	Block = Enum.KeyCode.F, Dodge = Enum.KeyCode.Q, Purify = Enum.KeyCode.B,
+}
+
+Config.VFX = {
+	MaxDistance = 220,
+	MobileScale = 0.5, -- escala de partículas em celulares
+	-- Texturas nativas do Roblox (existem em todo cliente)
+	Sparkle = "rbxasset://textures/particles/sparkles_main.dds",
+	Fire    = "rbxasset://textures/particles/fire_main.dds",
+	Smoke   = "rbxasset://textures/particles/smoke_main.dds",
+}
+
+-- Sons: cole seus próprios IDs "rbxassetid://..." aqui (vazio = sem som). Nada é inventado.
+Config.Sounds = {
+	Transform = "", Detransform = "", Impact = "", Block = "", Cataclysm = "",
+	LuckyCharm = "", MiraculousLadybug = "", Akuma = "", Purify = "", Lightning = "",
+}
+
+return Config
+</ProtectedString>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="RBX22">
+          <Properties>
+            <string name="Name">MiraculousRegistry</string>
+            <ProtectedString name="Source">--[[
+	MiraculousRegistry (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/MiraculousRegistry
+	Carrega automaticamente todo ModuleScript dentro de MiraculousShared/Heroes.
+	Para ADICIONAR um novo Miraculous: crie um ModuleScript novo em Heroes (copie um existente)
+	e, se tiver poderes, um módulo com o mesmo Id em ServerScriptService/MiraculousServer/Powers.
+]]
+local Registry = {}
+local heroes, ordered = {}, {}
+
+local DEFAULT_STATS = { MaxHealth = 120, WalkSpeed = 22, JumpPower = 60, AttackMult = 1 }
+local DEFAULT_COLORS = {
+	Primary = Color3.fromRGB(255, 255, 255),
+	Secondary = Color3.fromRGB(30, 30, 30),
+	Glow = Color3.fromRGB(255, 255, 255),
+}
+
+local function normalize(def, fileName)
+	assert(type(def) == "table", fileName .. " precisa retornar uma tabela")
+	def.Id = def.Id or fileName
+	def.HeroName = def.HeroName or def.Id
+	def.Kwami = def.Kwami or { Name = "Kwami", Concept = "?" }
+	def.Costume = def.Costume or def.Id
+	def.Phrases = def.Phrases or { Transform = "Transform me!", Detransform = "Transform back!" }
+	def.Colors = setmetatable(def.Colors or {}, { __index = DEFAULT_COLORS })
+	def.Stats = setmetatable(def.Stats or {}, { __index = DEFAULT_STATS })
+	def.Powers = def.Powers or {}
+	for i, p in ipairs(def.Powers) do
+		p.Index = i
+		p.Cooldown = p.Cooldown or 5
+		p.Energy = p.Energy or 0
+		p.Range = p.Range or 60
+	end
+	return def
+end
+
+local initialized = false
+function Registry.Init(heroFolder)
+	if initialized then return end
+	initialized = true
+	for _, mod in ipairs(heroFolder:GetChildren()) do
+		if mod:IsA("ModuleScript") then
+			local ok, def = pcall(require, mod)
+			if ok then
+				def = normalize(def, mod.Name)
+				heroes[def.Id] = def
+				table.insert(ordered, def)
+			else
+				warn("[Miraculous] Falha ao carregar herói " .. mod.Name .. ": " .. tostring(def))
+			end
+		end
+	end
+	table.sort(ordered, function(a, b) return a.Id &lt; b.Id end)
+end
+
+function Registry.Get(id) return heroes[id] end
+function Registry.All() return ordered end
+
+function Registry.GetPower(heroId, powerId)
+	local h = heroes[heroId]
+	if not h then return nil end
+	for _, p in ipairs(h.Powers) do
+		if p.Id == powerId then return p end
+	end
+end
+
+return Registry
+</ProtectedString>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="RBX23">
+          <Properties>
+            <string name="Name">Util</string>
+            <ProtectedString name="Source">--[[ Util (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/Util ]]
+local TweenService = game:GetService("TweenService")
+local Debris = game:GetService("Debris")
+
+local Util = {}
+
+function Util.New(class, props, parent)
+	local inst = Instance.new(class)
+	if props then
+		for k, v in pairs(props) do inst[k] = v end
+	end
+	if parent then inst.Parent = parent end
+	return inst
+end
+
+function Util.GetParts(char)
+	if not char then return nil, nil end
+	return char:FindFirstChildOfClass("Humanoid"), char:FindFirstChild("HumanoidRootPart")
+end
+
+function Util.IsAlive(char)
+	local hum, hrp = Util.GetParts(char)
+	return hum ~= nil and hrp ~= nil and hum.Health &gt; 0
+end
+
+function Util.Tween(inst, time, props, style, dir)
+	local t = TweenService:Create(inst, TweenInfo.new(time, style or Enum.EasingStyle.Quad, dir or Enum.EasingDirection.Out), props)
+	t:Play()
+	return t
+end
+
+function Util.Clean(inst, t)
+	Debris:AddItem(inst, t)
+end
+
+-- Anchored, invisible, no-collide anchor part (para attachments/emitters)
+function Util.Anchor(position, parent)
+	return Util.New("Part", {
+		Anchored = true, CanCollide = false, CanQuery = false, CanTouch = false,
+		Transparency = 1, Size = Vector3.new(0.2, 0.2, 0.2), CFrame = CFrame.new(position),
+		Name = "FXAnchor",
+	}, parent or workspace)
+end
+
+function Util.Flat(v) return Vector3.new(v.X, 0, v.Z) end
+
+function Util.Unit(v, fallback)
+	if v.Magnitude &lt; 1e-4 then return fallback or Vector3.new(0, 0, -1) end
+	return v.Unit
+end
+
+-- Modelos -&gt; lista de Characters (Models com Humanoid vivo) a partir de Parts
+function Util.CharsFromParts(parts, exclude)
+	local seen, list = {}, {}
+	for _, p in ipairs(parts) do
+		local model = p:FindFirstAncestorOfClass("Model")
+		while model and not model:FindFirstChildOfClass("Humanoid") do
+			model = model:FindFirstAncestorOfClass("Model")
+		end
+		if model and model ~= exclude and not seen[model] and Util.IsAlive(model) then
+			seen[model] = true
+			table.insert(list, model)
+		end
+	end
+	return list
+end
+
+function Util.RandomUnit()
+	local r = Random.new()
+	return Vector3.new(r:NextNumber(-1, 1), r:NextNumber(-1, 1), r:NextNumber(-1, 1)).Unit
+end
+
+return Util
+</ProtectedString>
+          </Properties>
+        </Item>
+        <Item class="ModuleScript" referent="RBX24">
+          <Properties>
+            <string name="Name">Villains</string>
+            <ProtectedString name="Source">--[[
+	Villains (ModuleScript) -&gt; ReplicatedStorage/MiraculousShared/Villains
+	Cada vilão akumatizado. Para adicionar um novo, copie uma entrada.
+	Kinds de habilidade: Shockwave, Projectile, Barrage, Dash, StunPulse
+	Opcional: ServerStorage/VillainCostumes/&lt;Costume&gt;, ServerStorage/AkumaObjects/&lt;Object&gt;
+]]
+return {
+	Stoneheart = {
+		Name = "Stoneheart", Object = "StoneheartRing", Costume = "Stoneheart",
+		Colors = { Primary = Color3.fromRGB(110, 110, 120), Glow = Color3.fromRGB(170, 90, 255) },
+		Stats = { Health = 420, WalkSpeed = 16, DamageMult = 1.2 },
+		Abilities = {
+			{ Id = "Slam", Kind = "Shockwave", Cooldown = 6, Radius = 20, Damage = 24, Stun = 1.2, Knockback = 60, MinRange = 0, MaxRange = 18 },
+			{ Id = "Boulder", Kind = "Projectile", Cooldown = 5, Damage = 28, Speed = 70, Range = 120, Size = 3.5, MinRange = 15, MaxRange = 100 },
+		},
+	},
+	LadyWifi = {
+		Name = "Lady Wifi", Object = "LadyWifiPhone", Costume = "LadyWifi",
+		Colors = { Primary = Color3.fromRGB(90, 40, 150), Glow = Color3.fromRGB(120, 255, 255) },
+		Stats = { Health = 300, WalkSpeed = 22, DamageMult = 1 },
+		Abilities = {
+			{ Id = "WifiPulse", Kind = "StunPulse", Cooldown = 9, Radius = 22, Damage = 8, Stun = 2.0, MinRange = 0, MaxRange = 20 },
+			{ Id = "DataBeam", Kind = "Projectile", Cooldown = 3, Damage = 14, Speed = 120, Range = 140, Size = 1.6, MinRange = 10, MaxRange = 120 },
+			{ Id = "Warp", Kind = "Dash", Cooldown = 7, Distance = 40, Damage = 12, MinRange = 20, MaxRange = 80 },
+		},
+	},
+	Evillustrator = {
+		Name = "Evillustrator", Object = "EvillustratorStylus", Costume = "Evillustrator",
+		Colors = { Primary = Color3.fromRGB(70, 40, 110), Glow = Color3.fromRGB(255, 120, 220) },
+		Stats = { Health = 330, WalkSpeed = 20, DamageMult = 1 },
+		Abilities = {
+			{ Id = "InkBarrage", Kind = "Barrage", Cooldown = 7, Count = 5, Spread = 28, Damage = 10, Speed = 90, Range = 110, Size = 1.4, MinRange = 10, MaxRange = 90 },
+			{ Id = "InkBurst", Kind = "Shockwave", Cooldown = 8, Radius = 16, Damage = 16, Stun = 0.6, Knockback = 45, MinRange = 0, MaxRange = 14 },
+		},
+	},
+	SimonSays = {
+		Name = "Simon Says", Object = "SimonCards", Costume = "SimonSays",
+		Colors = { Primary = Color3.fromRGB(60, 30, 100), Glow = Color3.fromRGB(255, 80, 120) },
+		Stats = { Health = 280, WalkSpeed = 19, DamageMult = 0.9 },
+		Abilities = {
+			{ Id = "Hypnosis", Kind = "StunPulse", Cooldown = 10, Radius = 28, Damage = 4, Stun = 2.5, MinRange = 0, MaxRange = 26 },
+			{ Id = "CardFan", Kind = "Barrage", Cooldown = 6, Count = 3, Spread = 18, Damage = 12, Speed = 100, Range = 100, Size = 1.2, MinRange = 8, MaxRange = 85 },
+		},
+	},
+}
+</ProtectedString>
+          </Properties>
+        </Item>
+      </Item>
+    </Item>
+    <Item class="ServerScriptService" referent="RBX2">
+      <Properties>
+        <string name="Name">ServerScriptService</string>
+      </Properties>
+      <Item class="Script" referent="RBX25">
+        <Properties>
+          <string name="Name">MiraculousServer</string>
+          <ProtectedString name="Source">--[[
+	MiraculousServer (Script) -&gt; ServerScriptService/MiraculousServer
+	Filhos: Folder "Modules" e Folder "Powers" (ModuleScripts). Este script liga tudo.
+]]
+local Players = game:GetService("Players")
+local RS = game:GetService("ReplicatedStorage")
+local SS = game:GetService("ServerStorage")
+local RunService = game:GetService("RunService")
+
+local Shared = RS:WaitForChild("MiraculousShared")
+local Config = require(Shared.Config)
+local Registry = require(Shared.MiraculousRegistry)
+local Modules = script.Modules
+
+-- Pastas de modelos (criadas vazias se não existirem; VOCÊ coloca os modelos dentro)
+for _, key in ipairs({ "Costumes", "Weapons", "LuckyItems", "AkumaObjects", "VillainCostumes" }) do
+	local n = Config.Folders[key]
+	if not SS:FindFirstChild(n) then
+		local f = Instance.new("Folder"); f.Name = n; f.Parent = SS
+	end
+end
+local assets = RS:FindFirstChild(Config.Folders.Assets)
+if not assets then
+	assets = Instance.new("Folder"); assets.Name = Config.Folders.Assets; assets.Parent = RS
+end
+if not assets:FindFirstChild("Kwamis") then
+	local f = Instance.new("Folder"); f.Name = "Kwamis"; f.Parent = assets
+end
+
+local Remotes = require(Modules.Remotes)
+Remotes.Init()
+Registry.Init(Shared.Heroes)
+
+local Validation = require(Modules.Validation)
+local State = require(Modules.StateService)
+local Combat = require(Modules.CombatService)
+local History = require(Modules.HistoryService)
+local Transform = require(Modules.TransformService)
+local Powers = require(Modules.PowerService)
+local Akuma = require(Modules.AkumaService)
+
+Powers.Init(script.Powers)
+Akuma.Init()
+
+------------------------------------------------------------------ Remotes (todo input do cliente é validado)
+Remotes.Get("SelectMiraculous").OnServerInvoke = function(player, id)
+	if not Validation.Allow(player, "Select", 0.5) then return false, "Calma!" end
+	if id ~= nil and not Validation.IsString(id, 32) then return false, "Inválido" end
+	return Transform.Select(player, id)
+end
+
+Remotes.Get("TransformRequest").OnServerEvent:Connect(function(player)
+	if Validation.Allow(player, "Transform", 1) then Transform.Transform(player) end
+end)
+
+Remotes.Get("DetransformRequest").OnServerEvent:Connect(function(player)
+	if Validation.Allow(player, "Detransform", 1) then Transform.Detransform(player, false) end
+end)
+
+Remotes.Get("UsePower").OnServerEvent:Connect(function(player, index, aim)
+	Powers.Use(player, index, aim)
+end)
+
+Remotes.Get("Attack").OnServerEvent:Connect(function(player)
+	if Validation.Allow(player, "Attack", 0.1) then Combat.Melee(player) end
+end)
+
+Remotes.Get("Block").OnServerEvent:Connect(function(player, on)
+	if Validation.IsBool(on) and Validation.Allow(player, "Block", 0.1) then Combat.SetBlock(player, on) end
+end)
+
+Remotes.Get("Dodge").OnServerEvent:Connect(function(player, dir)
+	if Validation.IsVec3(dir) and Validation.Allow(player, "Dodge", 0.2) then Combat.Dodge(player, dir) end
+end)
+
+Remotes.Get("Purify").OnServerEvent:Connect(function(player)
+	Akuma.Purify(player)
+end)
+
+Remotes.Get("VillainPower").OnServerEvent:Connect(function(player, index, aim)
+	Akuma.UsePlayerAbility(player, index, aim)
+end)
+
+Remotes.Get("HawkMothAkumatize").OnServerEvent:Connect(function(player, target, villainId)
+	Akuma.RequestFromPlayer(player, target, villainId)
+end)
+
+------------------------------------------------------------------ Ciclo de vida dos jogadores
+local function onCharacter(player, char)
+	State.Reset(player)
+	local hum = char:WaitForChild("Humanoid", 10)
+	if hum then
+		hum.Died:Once(function()
+			Combat.SetBlock(player, false)
+			State.Reset(player)
+		end)
+	end
+end
+
+local function onPlayer(player)
+	State.Get(player)
+	State.Reset(player)
+	player.CharacterAdded:Connect(function(c) onCharacter(player, c) end)
+	if player.Character then onCharacter(player, player.Character) end
+end
+
+Players.PlayerAdded:Connect(onPlayer)
+for _, p in ipairs(Players:GetPlayers()) do onPlayer(p) end
+
+Players.PlayerRemoving:Connect(function(player)
+	Transform.Release(player)
+	Validation.Clear(player)
+	State.Remove(player)
+end)
+
+------------------------------------------------------------------ Loop principal
+RunService.Heartbeat:Connect(function(dt)
+	History.Step(dt)
+	Combat.ShieldStep()
+end)
+
+task.spawn(function()
+	while true do
+		task.wait(1)
+		State.RegenTick(1)
+	end
+end)
+</ProtectedString>
+        </Properties>
+        <Item class="Folder" referent="RBX26">
+          <Properties>
+            <string name="Name">Modules</string>
+          </Properties>
+          <Item class="ModuleScript" referent="RBX27">
+            <Properties>
+              <string name="Name">AkumaService</string>
+              <ProtectedString name="Source">--[[ AkumaService (ModuleScript) -&gt; .../Modules/AkumaService
+	Akumatização de jogadores e NPCs: borboleta -&gt; objeto akumatizado -&gt; vilão (traje, stats, habilidades, IA de NPC)
+	-&gt; quebrar o objeto libera a akuma -&gt; Ladybug purifica (tecla Purify) -&gt; desakumatização.
+	Se a akuma não for purificada a tempo, ela reinfecta o vilão com um novo objeto. ]]
+local Players = game:GetService("Players")
+local RS = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+local CollectionService = game:GetService("CollectionService")
+
+local Config = require(RS.MiraculousShared.Config)
+local Util = require(RS.MiraculousShared.Util)
+local Villains = require(RS.MiraculousShared.Villains)
+local M = script.Parent
+local State = require(M.StateService)
+local Combat = require(M.CombatService)
+local Appearance = require(M.AppearanceService)
+local Transform = require(M.TransformService)
+local VFX = require(M.VFXBroadcast)
+local Validation = require(M.Validation)
+
+local A = Config.Akuma
+local Akuma = {}
+local active = {} -- [char] = entry
+
+------------------------------------------------------------------ Objeto akumatizado
+local function markObject(root, char)
+	for _, d in ipairs(root:GetDescendants()) do
+		if d:IsA("BasePart") then d:SetAttribute("AkumaObject", true) end
+	end
+	if root:IsA("BasePart") then root:SetAttribute("AkumaObject", true) end
+end
+
+local function createObject(char, def)
+	local hum = char:FindFirstChildOfClass("Humanoid")
+	local arm = char:FindFirstChild("Right Arm") or char:FindFirstChild("HumanoidRootPart")
+	local folder = Appearance.GetFolder("AkumaObjects")
+	local src = folder and def.Object and folder:FindFirstChild(def.Object)
+	local obj
+	if src and src:IsA("Accessory") then
+		obj = src:Clone()
+		hum:AddAccessory(obj)
+	elseif src and (src:IsA("Model") or src:IsA("BasePart")) then
+		obj = src:Clone()
+		local main = obj:IsA("Model") and (obj.PrimaryPart or obj:FindFirstChildWhichIsA("BasePart", true)) or obj
+		if obj:IsA("Model") then obj:PivotTo(arm.CFrame * CFrame.new(0, -1, -0.6)) else obj.CFrame = arm.CFrame * CFrame.new(0, -1, -0.6) end
+		for _, d in ipairs(obj:GetDescendants()) do if d:IsA("BasePart") then d.Anchored = false; d.CanCollide = false; d.Massless = true end end
+		if obj:IsA("BasePart") then obj.Anchored = false; obj.CanCollide = false; obj.Massless = true end
+		local w = Util.New("WeldConstraint", { Part0 = arm, Part1 = main }, main)
+		obj.Parent = char
+	else
+		obj = Util.New("Part", {
+			Name = "AkumaObject", Size = Vector3.new(0.9, 0.9, 0.9), Shape = Enum.PartType.Ball,
+			Material = Enum.Material.Neon, Color = def.Colors.Glow, CanCollide = false, Massless = true,
+			CFrame = arm.CFrame * CFrame.new(0, -1.1, -0.5),
+		})
+		Util.New("WeldConstraint", { Part0 = arm, Part1 = obj }, obj)
+		Util.New("PointLight", { Color = def.Colors.Glow, Range = 10, Brightness = 2 }, obj)
+		obj.Parent = char
+	end
+	markObject(obj, char)
+	return obj
+end
+
+------------------------------------------------------------------ Habilidades de vilão
+function Akuma.RunAbility(char, def, ab, aim)
+	local hum, hrp = Util.GetParts(char)
+	if not (hum and hrp) or Combat.IsStunned(char) then return false end
+	local mult = def.Stats.DamageMult
+	local color = def.Colors.Glow
+	local dir = Util.Unit(Util.Flat(aim - hrp.Position), hrp.CFrame.LookVector)
+	VFX.Anim(char, "Cast")
+
+	if ab.Kind == "Shockwave" then
+		VFX.Play("Shockwave", { Position = hrp.Position, Radius = ab.Radius, Color = color })
+		task.delay(0.35, function()
+			if Util.IsAlive(char) then
+				Combat.AoE(char, hrp.Position, ab.Radius, ab.Damage * mult, { Stun = ab.Stun, Knockback = ab.Knockback, Color = color })
+			end
+		end)
+	elseif ab.Kind == "StunPulse" then
+		VFX.Play("StunPulse", { Position = hrp.Position, Radius = ab.Radius, Color = color })
+		task.delay(0.3, function()
+			if Util.IsAlive(char) then
+				Combat.AoE(char, hrp.Position, ab.Radius, ab.Damage * mult, { Stun = ab.Stun, Color = color })
+			end
+		end)
+	elseif ab.Kind == "Projectile" then
+		Combat.Projectile({
+			Attacker = char, Origin = hrp.Position + dir * 3 + Vector3.new(0, 1, 0), Direction = (aim - hrp.Position).Magnitude &gt; 1 and (aim - hrp.Position) or dir,
+			Speed = ab.Speed, Range = ab.Range, Radius = ab.Size, Damage = ab.Damage * mult, Color = color,
+			Opts = { Color = color, Knockback = 20 },
+		})
+	elseif ab.Kind == "Barrage" then
+		for i = 1, ab.Count do
+			local t = ab.Count &gt; 1 and ((i - 1) / (ab.Count - 1) - 0.5) or 0
+			local d = (CFrame.lookAt(Vector3.zero, dir) * CFrame.Angles(0, math.rad(ab.Spread * t), 0)).LookVector
+			task.delay((i - 1) * 0.06, function()
+				if Util.IsAlive(char) then
+					Combat.Projectile({
+						Attacker = char, Origin = hrp.Position + d * 3 + Vector3.new(0, 1, 0), Direction = d,
+						Speed = ab.Speed, Range = ab.Range, Radius = ab.Size, Damage = ab.Damage * mult, Color = color,
+						Opts = { Color = color },
+					})
+				end
+			end)
+		end
+	elseif ab.Kind == "Dash" then
+		local rp = RaycastParams.new()
+		rp.FilterDescendantsInstances = { char }
+		rp.FilterType = Enum.RaycastFilterType.Exclude
+		local res = workspace:Raycast(hrp.Position, dir * ab.Distance, rp)
+		local dist = res and math.max(res.Distance - 3, 0) or ab.Distance
+		local from = hrp.Position
+		local to = from + dir * dist
+		VFX.Play("Warp", { From = from, To = to, Color = color })
+		char:PivotTo(CFrame.lookAt(to, to + dir))
+		Combat.AoE(char, to, 9, ab.Damage * mult, { Stun = 0.5, Knockback = 40, Color = color })
+	end
+	return true
+end
+
+local function ready(entry, ab)
+	local t = entry.Cooldowns[ab.Id]
+	return not t or os.clock() &gt;= t
+end
+
+function Akuma.UsePlayerAbility(player, index, aim)
+	if not Validation.IsInt(index, 1, 6) or not Validation.Allow(player, "VillainPower", 0.2) then return end
+	local char = player.Character
+	local entry = char and active[char]
+	if not (entry and entry.Active and Util.IsAlive(char)) then return end
+	local ab = entry.Def.Abilities[index]
+	if not ab or not ready(entry, ab) then return end
+	local _, hrp = Util.GetParts(char)
+	aim = Validation.Aim(hrp.Position, aim, 150) or (hrp.Position + hrp.CFrame.LookVector * 20)
+	entry.Cooldowns[ab.Id] = os.clock() + ab.Cooldown
+	player:SetAttribute("Cd_" .. ab.Id, workspace:GetServerTimeNow() + ab.Cooldown)
+	Akuma.RunAbility(char, entry.Def, ab, aim)
+end
+
+------------------------------------------------------------------ IA de NPC
+local function pickTarget(char, entry)
+	local _, hrp = Util.GetParts(char)
+	local best, bestScore
+	local function consider(ch, weight)
+		if Combat.CanDamage(char, ch) then
+			local _, h = Util.GetParts(ch)
+			local score = (h.Position - hrp.Position).Magnitude * weight
+			if not bestScore or score &lt; bestScore then best, bestScore = ch, score end
+		end
+	end
+	for _, p in ipairs(Players:GetPlayers()) do
+		if p.Character then consider(p.Character, 1) end
+	end
+	for _, d in ipairs(CollectionService:GetTagged("Decoy")) do consider(d, 0.5) end
+	return best
+end
+
+local function startAI(char, entry)
+	local hum, hrp = Util.GetParts(char)
+	pcall(function() hrp:SetNetworkOwner(nil) end)
+	task.spawn(function()
+		local nextMelee = 0
+		while entry.Active and char.Parent and hum.Health &gt; 0 do
+			if not Combat.IsStunned(char) then
+				local target = pickTarget(char, entry)
+				if target then
+					local _, th = Util.GetParts(target)
+					local dist = (th.Position - hrp.Position).Magnitude
+					local aim = th.Position
+					if os.clock() &lt; State.Entity(char).ConfusedUntil then
+						aim = hrp.Position + Vector3.new(math.random(-30, 30), 0, math.random(-30, 30))
+					end
+					hum:MoveTo(dist &gt; 6 and aim or hrp.Position)
+					if dist &lt;= 7 and os.clock() &gt;= nextMelee then
+						nextMelee = os.clock() + 1.3
+						VFX.Anim(char, "Punch1")
+						Combat.Box(char, hrp.CFrame * CFrame.new(0, 0, -4), Vector3.new(7, 6, 8), 10 * entry.Def.Stats.DamageMult, { Knockback = 30, Color = entry.Def.Colors.Glow })
+					end
+					for _, ab in ipairs(entry.Def.Abilities) do
+						if ready(entry, ab) and dist &gt;= ab.MinRange and dist &lt;= ab.MaxRange then
+							entry.Cooldowns[ab.Id] = os.clock() + ab.Cooldown
+							Akuma.RunAbility(char, entry.Def, ab, aim)
+							break
+						end
+					end
+				end
+			end
+			task.wait(0.25)
+		end
+	end)
+end
+
+------------------------------------------------------------------ Akumatização
+local function lairPosition(target)
+	local lair = workspace:FindFirstChild(A.LairPartName)
+	if lair and lair:IsA("BasePart") then return lair.Position end
+	local _, hrp = Util.GetParts(target)
+	return hrp.Position + Vector3.new(0, 120, 0)
+end
+
+function Akuma.IsVillain(char) return active[char] ~= nil and active[char].Active end
+
+function Akuma.Akumatize(target, villainId)
+	local def = Villains[villainId]
+	if not def or not Util.IsAlive(target) or active[target] then return false end
+	local player = Players:GetPlayerFromCharacter(target)
+	if player then
+		local s = State.Get(player)
+		if s.Busy then return false end
+		if s.Transformed then
+			if not A.AllowAkumatizeHeroes then return false end
+			Transform.Detransform(player, true)
+		end
+	end
+	local entry = { Def = def, VillainId = villainId, Pending = true, Active = false, Cooldowns = {}, Player = player }
+	active[target] = entry
+
+	VFX.Play("AkumaFly", { To = target, From = lairPosition(target), Duration = A.FlightTime })
+	if player then VFX.Cinematic(player, "Akumatize", { Char = target, Duration = A.FlightTime + 1.5 }) end
+	task.wait(A.FlightTime)
+	if not Util.IsAlive(target) then active[target] = nil return false end
+
+	local hum = target:FindFirstChildOfClass("Humanoid")
+	entry.Snapshot = Appearance.Snapshot(target)
+	Appearance.ApplyVillain(target, def)
+	hum.UseJumpPower = true
+	hum.MaxHealth = def.Stats.Health
+	hum.Health = def.Stats.Health
+	hum.WalkSpeed = def.Stats.WalkSpeed
+	entry.Object = createObject(target, def)
+	entry.ObjectHP = A.ObjectHealth
+	entry.Highlight = Util.New("Highlight", {
+		FillColor = def.Colors.Glow, OutlineColor = def.Colors.Glow, FillTransparency = 0.8,
+		DepthMode = Enum.HighlightDepthMode.Occluded,
+	}, target)
+	target:SetAttribute("Faction", "Villain")
+	target:SetAttribute("AuraColor", def.Colors.Glow)
+	target:SetAttribute("VillainName", def.Name)
+	CollectionService:AddTag(target, "AkumaVillain")
+	CollectionService:AddTag(target, "Rewindable")
+	if player then
+		local s = State.Get(player)
+		s.Villain = { Id = villainId, Def = def }
+		player:SetAttribute("IsVillain", true)
+		player:SetAttribute("VillainId", villainId)
+	end
+	entry.Pending, entry.Active = false, true
+	VFX.Play("AkumaTransform", { Char = target, Color = def.Colors.Glow })
+
+	hum.Died:Once(function() Akuma.Cleanup(target) end)
+	if not player then startAI(target, entry) end
+	return true
+end
+
+------------------------------------------------------------------ Liberar / Purificar / Desakumatizar
+local function dropObject(entry)
+	if entry.Object then entry.Object:Destroy(); entry.Object = nil end
+end
+
+function Akuma.Release(char)
+	local entry = active[char]
+	if not (entry and entry.Active) or entry.Butterfly then return end
+	local _, hrp = Util.GetParts(char)
+	local pos = hrp and hrp.Position or Vector3.zero
+	VFX.Play("Impact", { Position = pos + Vector3.new(0, 2, 0), Color = entry.Def.Colors.Glow, Size = 3 })
+	dropObject(entry)
+	local bf = Util.New("Part", {
+		Name = "ReleasedAkuma", Shape = Enum.PartType.Ball, Size = Vector3.one * 1.2, Anchored = true,
+		CanCollide = false, Material = Enum.Material.Neon, Color = Color3.fromRGB(120, 40, 200),
+		CFrame = CFrame.new(pos + Vector3.new(0, 4, 0)),
+	}, workspace)
+	bf:SetAttribute("Purifiable", true)
+	CollectionService:AddTag(bf, "ReleasedAkuma")
+	entry.Butterfly = bf
+	VFX.Play("AkumaReleased", { Part = bf })
+
+	task.spawn(function()
+		local t0 = os.clock()
+		local base = bf.Position
+		while bf.Parent and os.clock() - t0 &lt; A.ReleasedTimeout do
+			local t = os.clock() - t0
+			bf.CFrame = CFrame.new(base + Vector3.new(math.cos(t * 1.3) * 14, 6 + math.sin(t * 2.1) * 4 + t * 0.6, math.sin(t * 0.9) * 14))
+			RunService.Heartbeat:Wait()
+		end
+		if bf.Parent and active[char] == entry and entry.Active then -- não foi purificada: reinfecta
+			bf:Destroy()
+			entry.Butterfly = nil
+			if Util.IsAlive(char) then
+				VFX.Play("AkumaFly", { To = char, From = bf.Position, Duration = 1.5 })
+				task.wait(1.5)
+				if Util.IsAlive(char) and active[char] == entry then
+					entry.Object = createObject(char, entry.Def)
+					entry.ObjectHP = A.ObjectHealth * 0.5
+					VFX.Play("AkumaTransform", { Char = char, Color = entry.Def.Colors.Glow })
+				end
+			end
+		end
+	end)
+end
+
+function Akuma.Deakumatize(char)
+	local entry = active[char]
+	if not entry then return end
+	entry.Active = false
+	active[char] = nil
+	dropObject(entry)
+	if entry.Highlight then entry.Highlight:Destroy() end
+	CollectionService:RemoveTag(char, "AkumaVillain")
+	CollectionService:RemoveTag(char, "Rewindable")
+	char:SetAttribute("Faction", nil)
+	char:SetAttribute("AuraColor", nil)
+	local player = entry.Player
+	if Util.IsAlive(char) then
+		Appearance.Restore(char, entry.Snapshot)
+		local hum = char:FindFirstChildOfClass("Humanoid")
+		local st = entry.Snapshot and entry.Snapshot.Stats
+		hum.MaxHealth = st and st.MaxHealth or 100
+		hum.Health = hum.MaxHealth
+		hum.WalkSpeed = st and st.WalkSpeed or 16
+		hum.JumpPower = st and st.JumpPower or 50
+		Combat.ClearStun(char)
+		VFX.Play("Deakuma", { Char = char })
+	end
+	if player then
+		local s = State.Get(player)
+		s.Villain = nil
+		player:SetAttribute("IsVillain", false)
+		player:SetAttribute("VillainId", nil)
+		for _, ab in ipairs(entry.Def.Abilities) do player:SetAttribute("Cd_" .. ab.Id, nil) end
+	end
+end
+
+function Akuma.Cleanup(char)
+	local entry = active[char]
+	if not entry then return end
+	entry.Active = false
+	active[char] = nil
+	dropObject(entry)
+	if entry.Butterfly then entry.Butterfly:Destroy() end
+	if entry.Highlight then entry.Highlight:Destroy() end
+	CollectionService:RemoveTag(char, "AkumaVillain")
+	CollectionService:RemoveTag(char, "Rewindable")
+	if entry.Player then
+		local s = State.Get(entry.Player)
+		s.Villain = nil
+		entry.Player:SetAttribute("IsVillain", false)
+		entry.Player:SetAttribute("VillainId", nil)
+	end
+end
+
+function Akuma.Purify(player)
+	if not Validation.Allow(player, "Purify", 0.5) then return end
+	local s = State.Get(player)
+	local char = player.Character
+	if not (s.Transformed and not s.Busy and Util.IsAlive(char)) then return end
+	local hero = require(RS.MiraculousShared.MiraculousRegistry).Get(s.HeroId)
+	if not hero.CanPurify then VFX.Notify(player, "Este herói não pode purificar akumas") return end
+	local _, hrp = Util.GetParts(char)
+	local bestChar, bestDist
+	for vch, entry in pairs(active) do
+		local bf = entry.Butterfly
+		if bf and bf.Parent then
+			local d = (bf.Position - hrp.Position).Magnitude
+			if d &lt;= A.PurifyRange and (not bestDist or d &lt; bestDist) then bestChar, bestDist = vch, d end
+		end
+	end
+	if not bestChar then VFX.Notify(player, "Nenhuma akuma ao alcance") return end
+	local entry = active[bestChar]
+	VFX.Play("Purify", { Position = entry.Butterfly.Position, From = char })
+	entry.Butterfly:Destroy()
+	entry.Butterfly = nil
+	Akuma.Deakumatize(bestChar)
+end
+
+------------------------------------------------------------------ Gatilhos
+local function authorized(player)
+	if A.StudioAllowAll and RunService:IsStudio() then return true end
+	return table.find(A.HawkMothUserIds, player.UserId) ~= nil
+end
+
+function Akuma.RequestFromPlayer(player, target, villainId)
+	if not authorized(player) or not Validation.Allow(player, "Akuma", 2) then return end
+	if typeof(target) ~= "Instance" or not target:IsA("Model") or not Validation.IsString(villainId) then return end
+	if not Villains[villainId] then return end
+	local isPlayerChar = Players:GetPlayerFromCharacter(target) ~= nil
+	if not (isPlayerChar or CollectionService:HasTag(target, A.NPCTag)) then return end
+	task.spawn(Akuma.Akumatize, target, villainId)
+end
+
+function Akuma.Init()
+	Combat.RegisterObjectHandler(function(part, attackerChar, dmg)
+		if not part:GetAttribute("AkumaObject") then return false end
+		local owner = part:FindFirstAncestorOfClass("Model")
+		local entry = owner and active[owner]
+		if not entry or Combat.GetFaction(attackerChar) ~= "Hero" then return true end
+		entry.ObjectHP -= dmg
+		VFX.Play("Impact", { Position = part.Position, Color = entry.Def.Colors.Glow, Size = 1.5 })
+		if entry.ObjectHP &lt;= 0 then Akuma.Release(owner) end
+		return true
+	end)
+	if A.Auto.Enabled then
+		task.spawn(function()
+			local names = {}
+			for id in pairs(Villains) do table.insert(names, id) end
+			while true do
+				task.wait(A.Auto.Interval)
+				local pool = {}
+				for _, m in ipairs(CollectionService:GetTagged(A.NPCTag)) do
+					if Util.IsAlive(m) and not active[m] then table.insert(pool, m) end
+				end
+				if #pool &gt; 0 and #names &gt; 0 then
+					task.spawn(Akuma.Akumatize, pool[math.random(#pool)], names[math.random(#names)])
+				end
+			end
+		end)
+	end
+end
+
+return Akuma
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX28">
+            <Properties>
+              <string name="Name">AppearanceService</string>
+              <ProtectedString name="Source">--[[ AppearanceService (ModuleScript) -&gt; .../Modules/AppearanceService
+	Troca de aparência (R6): salva a aparência original, aplica o traje (modelo seu ou fallback por cor) e restaura. ]]
+local RS = game:GetService("ReplicatedStorage")
+local SS = game:GetService("ServerStorage")
+local Config = require(RS.MiraculousShared.Config)
+
+local Appearance = {}
+
+local CLOTHING = { Shirt = true, Pants = true, ShirtGraphic = true, BodyColors = true }
+local warned = {}
+
+local function warnOnce(msg)
+	if not warned[msg] then warned[msg] = true; warn("[Miraculous] " .. msg) end
+end
+
+function Appearance.GetFolder(name)
+	return SS:FindFirstChild(Config.Folders[name])
+end
+
+-- Guarda clones da aparência atual
+function Appearance.Snapshot(char)
+	local hum = char:FindFirstChildOfClass("Humanoid")
+	local snap = { Items = {}, Face = nil }
+	for _, c in ipairs(char:GetChildren()) do
+		if c:IsA("Accessory") or CLOTHING[c.ClassName] then
+			c.Archivable = true
+			table.insert(snap.Items, c:Clone())
+		end
+	end
+	local head = char:FindFirstChild("Head")
+	local face = head and head:FindFirstChildWhichIsA("Decal")
+	if face then snap.Face = face:Clone() end
+	if hum then snap.Stats = { MaxHealth = hum.MaxHealth, Health = hum.Health, WalkSpeed = hum.WalkSpeed, JumpPower = hum.JumpPower } end
+	return snap
+end
+
+local function strip(char)
+	for _, c in ipairs(char:GetChildren()) do
+		if c:IsA("Accessory") or CLOTHING[c.ClassName] then c:Destroy() end
+	end
+end
+
+function Appearance.Restore(char, snap)
+	if not snap then return end
+	local hum = char:FindFirstChildOfClass("Humanoid")
+	strip(char)
+	for _, item in ipairs(snap.Items) do
+		local clone = item:Clone()
+		if clone:IsA("Accessory") and hum then hum:AddAccessory(clone) else clone.Parent = char end
+	end
+	local head = char:FindFirstChild("Head")
+	if head and snap.Face then
+		local old = head:FindFirstChildWhichIsA("Decal")
+		if old then old:Destroy() end
+		snap.Face:Clone().Parent = head
+	end
+end
+
+-- Aplica um modelo de traje: Folder/Model contendo Shirt/Pants/BodyColors/Accessory (e Decal "face" opcional)
+function Appearance.ApplyCostume(char, costume)
+	local hum = char:FindFirstChildOfClass("Humanoid")
+	strip(char)
+	for _, c in ipairs(costume:GetChildren()) do
+		if c:IsA("Accessory") and hum then
+			hum:AddAccessory(c:Clone())
+		elseif CLOTHING[c.ClassName] then
+			c:Clone().Parent = char
+		elseif c:IsA("Decal") and char:FindFirstChild("Head") then
+			local old = char.Head:FindFirstChildWhichIsA("Decal")
+			if old then old:Destroy() end
+			c:Clone().Parent = char.Head
+		end
+	end
+end
+
+-- Fallback sem modelos: pinta o corpo com as cores do herói/vilão
+function Appearance.ApplyColors(char, primary, secondary)
+	strip(char)
+	local bc = Instance.new("BodyColors")
+	bc.HeadColor3 = primary; bc.TorsoColor3 = primary
+	bc.LeftArmColor3 = primary; bc.RightArmColor3 = primary
+	bc.LeftLegColor3 = secondary; bc.RightLegColor3 = secondary
+	bc.Parent = char
+end
+
+function Appearance.ApplyHero(char, hero)
+	local folder = Appearance.GetFolder("Costumes")
+	local costume = folder and folder:FindFirstChild(hero.Costume)
+	if costume then
+		Appearance.ApplyCostume(char, costume)
+	else
+		warnOnce("Traje '" .. hero.Costume .. "' não encontrado em ServerStorage/" .. Config.Folders.Costumes .. " - usando cores de fallback.")
+		Appearance.ApplyColors(char, hero.Colors.Primary, hero.Colors.Secondary)
+	end
+end
+
+function Appearance.ApplyVillain(char, villain)
+	local folder = Appearance.GetFolder("VillainCostumes")
+	local costume = folder and villain.Costume and folder:FindFirstChild(villain.Costume)
+	if costume then
+		Appearance.ApplyCostume(char, costume)
+	else
+		warnOnce("Traje de vilão '" .. tostring(villain.Costume) .. "' não encontrado - usando cores de fallback.")
+		Appearance.ApplyColors(char, villain.Colors.Primary, villain.Colors.Primary:Lerp(Color3.new(0, 0, 0), 0.5))
+	end
+end
+
+-- Arma do herói (Tool vai para a Backpack; Accessory é vestido). Retorna lista de instâncias criadas.
+function Appearance.GiveWeapon(player, char, hero)
+	local created = {}
+	local folder = Appearance.GetFolder("Weapons")
+	local w = folder and hero.Weapon and folder:FindFirstChild(hero.Weapon)
+	if not w then return created end
+	local clone = w:Clone()
+	if clone:IsA("Tool") then
+		clone.Parent = player:FindFirstChildOfClass("Backpack")
+	elseif clone:IsA("Accessory") then
+		char:FindFirstChildOfClass("Humanoid"):AddAccessory(clone)
+	else
+		clone:Destroy()
+		return created
+	end
+	table.insert(created, clone)
+	return created
+end
+
+return Appearance
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX29">
+            <Properties>
+              <string name="Name">CombatService</string>
+              <ProtectedString name="Source">--[[ CombatService (ModuleScript) -&gt; .../Modules/CombatService
+	Dano, facções, escudos, stun, bloqueio, esquiva, combos, projéteis e AoE. Tudo validado no servidor. ]]
+local Players = game:GetService("Players")
+local RS = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+local CollectionService = game:GetService("CollectionService")
+
+local Config = require(RS.MiraculousShared.Config)
+local Util = require(RS.MiraculousShared.Util)
+local Registry = require(RS.MiraculousShared.MiraculousRegistry)
+local State = require(script.Parent.StateService)
+local VFX = require(script.Parent.VFXBroadcast)
+local Remotes = require(script.Parent.Remotes)
+
+local Combat = {}
+local C = Config.Combat
+
+Combat.MeleeModifiers = {} -- fn(player, parts, chars) -&gt; multiplicador de dano (opcional)
+local objectHandlers = {}  -- fn(part, attackerChar, damage) -&gt; true se tratou
+local shields = {}
+
+function Combat.RegisterObjectHandler(fn) table.insert(objectHandlers, fn) end
+
+------------------------------------------------------------------ Facções
+function Combat.GetFaction(char)
+	local player = Players:GetPlayerFromCharacter(char)
+	if player then
+		local s = State.Get(player)
+		if s.Villain then return "Villain" end
+		if s.Transformed then return "Hero" end
+		return "Civilian"
+	end
+	if CollectionService:HasTag(char, C.DummyTag) then return "Dummy" end
+	return char:GetAttribute("Faction") or "Civilian"
+end
+
+function Combat.CanDamage(attacker, target)
+	if attacker == target or not Util.IsAlive(target) then return false end
+	if C.PlayerVsPlayer and Players:GetPlayerFromCharacter(attacker) and Players:GetPlayerFromCharacter(target) then
+		return true
+	end
+	local fa, ft = Combat.GetFaction(attacker), Combat.GetFaction(target)
+	if fa == "Villain" then return ft == "Hero" or ft == "Civilian" or ft == "Decoy" end
+	if fa == "Hero" then return ft == "Villain" or ft == "Dummy" end
+	return false
+end
+
+------------------------------------------------------------------ Escudos (Shell-ter)
+function Combat.AddShield(owner, origin, radius, hp, duration)
+	local part = Util.New("Part", {
+		Shape = Enum.PartType.Ball, Size = Vector3.one * radius * 2, Anchored = true, CanCollide = false,
+		CanQuery = false, CanTouch = false, Material = Enum.Material.ForceField, Transparency = 0.55,
+		Color = Color3.fromRGB(80, 255, 150), CFrame = CFrame.new(origin), Name = "Shellter",
+	}, workspace)
+	local sh = { Origin = origin, Radius = radius, HP = hp, Owner = owner, Part = part, Expires = os.clock() + duration }
+	table.insert(shields, sh)
+	return sh
+end
+
+local function removeShield(sh, broken)
+	local i = table.find(shields, sh)
+	if i then table.remove(shields, i) end
+	if sh.Part then
+		VFX.Play(broken and "ShieldBreak" or "ShieldFade", { Position = sh.Origin, Radius = sh.Radius })
+		sh.Part:Destroy()
+		sh.Part = nil
+	end
+end
+
+function Combat.ShieldStep()
+	local t = os.clock()
+	for i = #shields, 1, -1 do
+		local sh = shields[i]
+		if t &gt;= sh.Expires or sh.HP &lt;= 0 then removeShield(sh, sh.HP &lt;= 0) end
+	end
+end
+
+local function absorb(attackerPos, targetPos, amount)
+	for _, sh in ipairs(shields) do
+		if (targetPos - sh.Origin).Magnitude &lt;= sh.Radius and (attackerPos - sh.Origin).Magnitude &gt; sh.Radius then
+			local taken = math.min(sh.HP, amount)
+			sh.HP -= taken
+			amount -= taken
+			VFX.Play("ShieldHit", { Position = targetPos, Origin = sh.Origin, Radius = sh.Radius })
+			if amount &lt;= 0 then return 0 end
+		end
+	end
+	return amount
+end
+
+------------------------------------------------------------------ Status
+function Combat.Stun(char, duration)
+	local hum = char:FindFirstChildOfClass("Humanoid")
+	if not hum then return end
+	local e = State.Entity(char)
+	local now = os.clock()
+	if now &gt;= e.StunUntil then
+		e.BaseSpeed, e.BaseJump = hum.WalkSpeed, hum.JumpPower
+	end
+	e.StunUntil = math.max(e.StunUntil, now + duration)
+	hum.WalkSpeed, hum.JumpPower = 0, 0
+	VFX.Play("Stun", { Char = char, Duration = duration })
+	task.delay(duration + 0.05, function()
+		if os.clock() &gt;= e.StunUntil and e.BaseSpeed and hum.Parent then
+			hum.WalkSpeed, hum.JumpPower = e.BaseSpeed, e.BaseJump or 50
+			e.BaseSpeed, e.BaseJump = nil, nil
+		end
+	end)
+end
+
+function Combat.ClearStun(char)
+	local e = State.Entity(char)
+	local hum = char:FindFirstChildOfClass("Humanoid")
+	e.StunUntil = 0
+	if hum and e.BaseSpeed then
+		hum.WalkSpeed, hum.JumpPower = e.BaseSpeed, e.BaseJump or 50
+		e.BaseSpeed, e.BaseJump = nil, nil
+	end
+end
+
+function Combat.Confuse(char, duration)
+	State.Entity(char).ConfusedUntil = os.clock() + duration
+	VFX.Play("Confuse", { Char = char, Duration = duration })
+end
+
+function Combat.IsStunned(char) return os.clock() &lt; State.Entity(char).StunUntil end
+function Combat.SetInvulnerable(char, d) local e = State.Entity(char); e.InvulnUntil = math.max(e.InvulnUntil, os.clock() + d) end
+
+function Combat.Launch(char, velocity)
+	local player = Players:GetPlayerFromCharacter(char)
+	local _, hrp = Util.GetParts(char)
+	if not hrp then return end
+	if player then
+		Remotes.Get("Launch"):FireClient(player, velocity)
+	else
+		hrp.AssemblyLinearVelocity = velocity
+	end
+end
+
+------------------------------------------------------------------ Dano
+-- opts: Unblockable, Stun, Knockback (número), Color, NoVFX
+function Combat.Damage(attacker, target, amount, opts)
+	opts = opts or {}
+	if not Combat.CanDamage(attacker, target) then return 0 end
+	local hum, thrp = Util.GetParts(target)
+	local _, ahrp = Util.GetParts(attacker)
+	if not (hum and thrp and ahrp) then return 0 end
+	local te, ae = State.Entity(target), State.Entity(attacker)
+	local now = os.clock()
+	if te.InvulnUntil &gt; now then return 0 end
+	if ae.ConfusedUntil &gt; now and math.random() &lt; 0.5 then return 0 end -- Mirage: erra o alvo
+
+	amount = absorb(ahrp.Position, thrp.Position, amount)
+	if amount &lt;= 0 then return 0 end
+
+	if te.Blocking and not opts.Unblockable then
+		local toA = Util.Unit(ahrp.Position - thrp.Position)
+		if thrp.CFrame.LookVector:Dot(toA) &gt; C.Block.FrontDot then
+			if now - te.BlockStart &lt;= C.Block.PerfectWindow then
+				VFX.Play("Block", { Position = thrp.Position + toA * 2, Perfect = true })
+				Combat.Stun(attacker, C.Block.PerfectStun)
+				return 0
+			end
+			amount *= (1 - C.Block.Reduction)
+			VFX.Play("Block", { Position = thrp.Position + toA * 2, Perfect = false })
+			opts = { Color = opts.Color, NoVFX = true }
+		end
+	end
+
+	hum:TakeDamage(amount)
+	if not opts.NoVFX then
+		VFX.Play("Impact", { Position = thrp.Position, Color = opts.Color or Color3.new(1, 1, 1), Size = math.clamp(amount / 12, 0.8, 3) })
+	end
+	if opts.Stun then Combat.Stun(target, opts.Stun) end
+	if opts.Knockback and opts.Knockback &gt; 0 then
+		local dir = Util.Unit(Util.Flat(thrp.Position - ahrp.Position), ahrp.CFrame.LookVector)
+		Combat.Launch(target, dir * opts.Knockback + Vector3.new(0, opts.Knockback * 0.35, 0))
+	end
+	return amount
+end
+
+------------------------------------------------------------------ Hitboxes / AoE
+local function params(exclude)
+	local p = OverlapParams.new()
+	p.FilterType = Enum.RaycastFilterType.Exclude
+	p.FilterDescendantsInstances = exclude
+	return p
+end
+
+function Combat.AoE(attacker, position, radius, damage, opts)
+	opts = opts or {}
+	local parts = workspace:GetPartBoundsInRadius(position, radius, params({ attacker }))
+	local hit = {}
+	for _, ch in ipairs(Util.CharsFromParts(parts, attacker)) do
+		local _, hrp = Util.GetParts(ch)
+		local d = math.max(0, damage)
+		if opts.Falloff then d *= 1 - 0.5 * math.clamp((hrp.Position - position).Magnitude / radius, 0, 1) end
+		if Combat.CanDamage(attacker, ch) then
+			Combat.Damage(attacker, ch, d, opts)
+			table.insert(hit, ch)
+		end
+	end
+	return hit, parts
+end
+
+function Combat.Box(attacker, cf, size, damage, opts)
+	local parts = workspace:GetPartBoundsInBox(cf, size, params({ attacker }))
+	local hit = {}
+	for _, ch in ipairs(Util.CharsFromParts(parts, attacker)) do
+		if Combat.CanDamage(attacker, ch) then
+			Combat.Damage(attacker, ch, damage, opts)
+			table.insert(hit, ch)
+		end
+	end
+	return hit, parts
+end
+
+------------------------------------------------------------------ Projéteis (simulados no servidor)
+-- o = { Attacker, Origin, Direction, Speed, Range, Radius, Damage, Color, Opts, OnHit(char|nil, pos) }
+function Combat.Projectile(o)
+	local size = o.Radius or 1.5
+	local part = Util.New("Part", {
+		Shape = Enum.PartType.Ball, Size = Vector3.one * size, Anchored = true, CanCollide = false,
+		CanQuery = false, CanTouch = false, Material = Enum.Material.Neon, Color = o.Color or Color3.new(1, 1, 1),
+		CFrame = CFrame.new(o.Origin), Name = "Projectile",
+	}, workspace)
+	local a0 = Util.New("Attachment", { Position = Vector3.new(0, size / 2, 0) }, part)
+	local a1 = Util.New("Attachment", { Position = Vector3.new(0, -size / 2, 0) }, part)
+	Util.New("Trail", {
+		Attachment0 = a0, Attachment1 = a1, Lifetime = 0.35, Color = ColorSequence.new(o.Color or Color3.new(1, 1, 1)),
+		Transparency = NumberSequence.new(0.1, 1), LightEmission = 1,
+	}, part)
+	Util.New("PointLight", { Color = o.Color or Color3.new(1, 1, 1), Range = 12, Brightness = 2 }, part)
+
+	local dir = o.Direction.Unit
+	local pos, traveled = o.Origin, 0
+	local rp = RaycastParams.new()
+	rp.FilterType = Enum.RaycastFilterType.Exclude
+	rp.FilterDescendantsInstances = { o.Attacker, part }
+	rp.RespectCanCollide = true
+	local hitSet = {}
+	local conn
+	local function finish(char, p)
+		if conn then conn:Disconnect() end
+		part:Destroy()
+		if o.OnHit then o.OnHit(char, p) end
+	end
+	conn = RunService.Heartbeat:Connect(function(dt)
+		local step = o.Speed * dt
+		local res = workspace:Raycast(pos, dir * step, rp)
+		local nextPos = res and res.Position or (pos + dir * step)
+		traveled += step
+		pos = nextPos
+		part.CFrame = CFrame.new(pos)
+		local parts = workspace:GetPartBoundsInRadius(pos, size, params({ o.Attacker, part }))
+		for _, ch in ipairs(Util.CharsFromParts(parts, o.Attacker)) do
+			if Combat.CanDamage(o.Attacker, ch) and not hitSet[ch] then
+				hitSet[ch] = true
+				Combat.Damage(o.Attacker, ch, o.Damage, o.Opts)
+				if not o.Pierce then return finish(ch, pos) end
+			end
+		end
+		if res or traveled &gt;= o.Range then finish(nil, pos) end
+	end)
+	return part
+end
+
+------------------------------------------------------------------ Melee (combo)
+local function attackerMult(char)
+	return char:GetAttribute("DamageMult") or 1
+end
+
+function Combat.Melee(player)
+	local s = State.Get(player)
+	local char = player.Character
+	if not (s.Transformed and not s.Busy and Util.IsAlive(char)) then return end
+	if Combat.IsStunned(char) then return end
+	local now = os.clock()
+	local K = C.Combo
+	if now - s.LastAttack &lt; K.Cooldown then return end
+	if now - s.LastAttack &gt; K.Window then s.Combo = 0 end
+	s.Combo = s.Combo % K.MaxHits + 1
+	s.LastAttack = now
+	local combo = s.Combo
+	local hero = Registry.Get(s.HeroId)
+	local _, hrp = Util.GetParts(char)
+	VFX.Anim(char, "Punch" .. combo)
+
+	task.delay(0.12, function()
+		if not Util.IsAlive(char) then return end
+		local cf = hrp.CFrame * CFrame.new(0, 0, -K.Range / 2)
+		local size = Vector3.new(K.Width, 6, K.Range)
+		local parts = workspace:GetPartBoundsInBox(cf, size, params({ char }))
+		local chars = Util.CharsFromParts(parts, char)
+		local mult = 1
+		for _, fn in ipairs(Combat.MeleeModifiers) do
+			mult *= (fn(player, parts, chars) or 1)
+		end
+		local dmg = K.Damage[combo] * hero.Stats.AttackMult * attackerMult(char) * mult
+		local color = hero.Colors.Glow
+		for _, ch in ipairs(chars) do
+			if Combat.CanDamage(char, ch) then
+				Combat.Damage(char, ch, dmg, {
+					Color = color, Knockback = K.Knockback[combo],
+					Stun = (combo == K.MaxHits) and K.StunOnLast or nil,
+				})
+			end
+		end
+		for _, p in ipairs(parts) do
+			for _, h in ipairs(objectHandlers) do
+				if h(p, char, dmg) then break end
+			end
+		end
+		VFX.Play("Slash", { Char = char, Combo = combo, Color = color })
+	end)
+end
+
+function Combat.SetBlock(player, on)
+	local s = State.Get(player)
+	local char = player.Character
+	if not (s.Transformed and not s.Busy and Util.IsAlive(char)) then on = false end
+	if char then
+		local e = State.Entity(char)
+		if on and not e.Blocking then e.BlockStart = os.clock() end
+		e.Blocking = on
+		VFX.Anim(char, on and "Block" or "BlockEnd")
+	end
+	player:SetAttribute("IsBlocking", on)
+end
+
+function Combat.Dodge(player, dir)
+	local s = State.Get(player)
+	local char = player.Character
+	if not (s.Transformed and not s.Busy and Util.IsAlive(char)) or Combat.IsStunned(char) then return end
+	if State.OnCooldown(player, "Dodge") then return end
+	State.StartCooldown(player, "Dodge", C.Dodge.Cooldown)
+	local _, hrp = Util.GetParts(char)
+	dir = Util.Unit(Util.Flat(dir), -hrp.CFrame.LookVector)
+	Combat.SetInvulnerable(char, C.Dodge.Invulnerable)
+	Combat.Launch(char, dir * C.Dodge.Speed + Vector3.new(0, 8, 0))
+	VFX.Anim(char, "Dodge")
+	VFX.Play("Dodge", { Char = char, Direction = dir })
+end
+
+return Combat
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX30">
+            <Properties>
+              <string name="Name">HistoryService</string>
+              <ProtectedString name="Source">--[[ HistoryService (ModuleScript) -&gt; .../Modules/HistoryService
+	Grava o estado do mundo (posição/vida) a cada Config.Rewind.Interval para o poder "Second Chance"
+	e guarda partes destruídas (Cataclysm) para poderem ser restauradas (Second Chance / Miraculous Ladybug). ]]
+local Players = game:GetService("Players")
+local RS = game:GetService("ReplicatedStorage")
+local CollectionService = game:GetService("CollectionService")
+local Config = require(RS.MiraculousShared.Config)
+local Util = require(RS.MiraculousShared.Util)
+
+local History = {}
+local buffer = {}
+local destroyed = {}
+local acc = 0
+
+local function record()
+	local list = {}
+	local function add(char)
+		local hum, hrp = Util.GetParts(char)
+		if hum and hrp and hum.Health &gt; 0 then
+			table.insert(list, { char = char, cf = hrp.CFrame, hp = hum.Health })
+		end
+	end
+	for _, p in ipairs(Players:GetPlayers()) do
+		if p.Character then add(p.Character) end
+	end
+	for _, m in ipairs(CollectionService:GetTagged("Rewindable")) do add(m) end
+	table.insert(buffer, { t = os.clock(), list = list })
+	local maxEntries = math.ceil(Config.Rewind.MaxSeconds / Config.Rewind.Interval)
+	while #buffer &gt; maxEntries do table.remove(buffer, 1) end
+end
+
+function History.Step(dt)
+	acc += dt
+	if acc &gt;= Config.Rewind.Interval then
+		acc = 0
+		record()
+	end
+end
+
+-- Chame antes de destruir uma Part "Destructible"
+function History.RegisterDestroyed(part)
+	local ok, clone = pcall(function() return part:Clone() end)
+	if ok and clone then
+		table.insert(destroyed, { clone = clone, parent = part.Parent, t = os.clock() })
+	end
+end
+
+local function restoreDestroyed(sinceTime)
+	local restored = 0
+	for i = #destroyed, 1, -1 do
+		local d = destroyed[i]
+		if d.t &gt;= sinceTime then
+			if d.parent and d.parent.Parent then
+				d.clone.Parent = d.parent
+				restored += 1
+			end
+			table.remove(destroyed, i)
+		end
+	end
+	return restored
+end
+
+function History.RestoreAllDestroyed() return restoreDestroyed(0) end
+
+-- Volta o mundo `seconds` atrás. Retorna quantas entidades foram restauradas.
+function History.Rewind(seconds)
+	local target = os.clock() - seconds
+	local snap = buffer[1]
+	for i = #buffer, 1, -1 do
+		if buffer[i].t &lt;= target then snap = buffer[i]; break end
+	end
+	if not snap then return 0 end
+	local n = 0
+	for _, e in ipairs(snap.list) do
+		local hum, hrp = Util.GetParts(e.char)
+		if hum and hrp and hum.Health &gt; 0 then
+			e.char:PivotTo(e.cf)
+			hrp.AssemblyLinearVelocity = Vector3.zero
+			hum.Health = math.max(hum.Health, math.min(e.hp, hum.MaxHealth))
+			n += 1
+		end
+	end
+	restoreDestroyed(snap.t)
+	-- descarta o futuro gravado
+	for i = #buffer, 1, -1 do
+		if buffer[i].t &gt; snap.t then table.remove(buffer, i) end
+	end
+	return n
+end
+
+return History
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX31">
+            <Properties>
+              <string name="Name">PowerService</string>
+              <ProtectedString name="Source">--[[ PowerService (ModuleScript) -&gt; .../Modules/PowerService
+	Valida e executa poderes. A lógica de cada herói fica em ServerScriptService/MiraculousServer/Powers/&lt;HeroId&gt;.
+	Contrato do módulo de poderes:
+	  return { _Init = function(deps) end (opcional),
+	           &lt;PowerId&gt; = { CanUse = function(ctx) return true end (opcional), Cast = function(ctx) end } } ]]
+local RS = game:GetService("ReplicatedStorage")
+local Config = require(RS.MiraculousShared.Config)
+local Util = require(RS.MiraculousShared.Util)
+local Registry = require(RS.MiraculousShared.MiraculousRegistry)
+
+local M = script.Parent
+local State = require(M.StateService)
+local Combat = require(M.CombatService)
+local VFX = require(M.VFXBroadcast)
+local History = require(M.HistoryService)
+local Transform = require(M.TransformService)
+local Appearance = require(M.AppearanceService)
+local Validation = require(M.Validation)
+
+local Powers = {}
+local impls = {}
+local deps = {
+	Config = Config, Util = Util, Registry = Registry, State = State, Combat = Combat,
+	VFX = VFX, History = History, Transform = Transform, Appearance = Appearance,
+}
+
+function Powers.Init(folder)
+	for _, mod in ipairs(folder:GetChildren()) do
+		if mod:IsA("ModuleScript") then
+			local ok, impl = pcall(require, mod)
+			if ok and type(impl) == "table" then
+				impls[mod.Name] = impl
+				if impl._Init then impl._Init(deps) end
+			else
+				warn("[Miraculous] Falha ao carregar poderes de " .. mod.Name .. ": " .. tostring(impl))
+			end
+		end
+	end
+end
+
+function Powers.Use(player, index, aim)
+	if not Validation.IsInt(index, 1, 8) then return end
+	if not Validation.Allow(player, "Power", 0.15) then return end
+	local s = State.Get(player)
+	local char = player.Character
+	if not (s.Transformed and not s.Busy and Util.IsAlive(char)) then return end
+	if Combat.IsStunned(char) then return end
+	local hero = Registry.Get(s.HeroId)
+	local power = hero and hero.Powers[index]
+	if not power then return end
+
+	if State.OnCooldown(player, power.Id) then return end
+	if s.Energy &lt; power.Energy then VFX.Notify(player, "Energia insuficiente") return end
+	if power.RequiresFlag and not s.Flags[power.RequiresFlag] then
+		VFX.Notify(player, "Requer: " .. power.RequiresFlag)
+		return
+	end
+	local impl = impls[hero.Id] and impls[hero.Id][power.Id]
+	if not impl then warn("[Miraculous] Sem implementação para " .. hero.Id .. "." .. power.Id) return end
+
+	local hum, hrp = Util.GetParts(char)
+	local maxRange = math.min(power.Range, Config.Combat.MaxAimDistance)
+	local target = Validation.Aim(hrp.Position, aim or (hrp.Position + hrp.CFrame.LookVector * 20), maxRange)
+	if not target then target = hrp.Position + hrp.CFrame.LookVector * 20 end
+
+	local ctx = {
+		Player = player, Char = char, Hum = hum, HRP = hrp, Hero = hero, Power = power,
+		Aim = target, S = s, D = deps,
+	}
+	if impl.CanUse then
+		local ok, msg = impl.CanUse(ctx)
+		if not ok then
+			if msg then VFX.Notify(player, msg) end
+			return
+		end
+	end
+
+	State.SetEnergy(player, s.Energy - power.Energy)
+	State.StartCooldown(player, power.Id, power.Cooldown)
+	VFX.Anim(char, "Cast")
+	local ok, err = pcall(impl.Cast, ctx)
+	if not ok then warn("[Miraculous] Erro no poder " .. power.Id .. ": " .. tostring(err)) end
+	if power.StartsTimer and s.Transformed and not player:GetAttribute("DetransformAt") then
+		Transform.StartTimer(player, Config.Transform.TimerSeconds)
+	end
+end
+
+return Powers
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX32">
+            <Properties>
+              <string name="Name">Remotes</string>
+              <ProtectedString name="Source">--[[ Remotes (ModuleScript) -&gt; ServerScriptService/MiraculousServer/Modules/Remotes
+	Cria a pasta ReplicatedStorage/MiraculousRemotes com todos os RemoteEvents/Functions. ]]
+local RS = game:GetService("ReplicatedStorage")
+local Config = require(RS.MiraculousShared.Config)
+
+local Remotes = {}
+local folder
+
+function Remotes.Init()
+	folder = RS:FindFirstChild(Config.RemoteFolderName)
+	if not folder then
+		folder = Instance.new("Folder")
+		folder.Name = Config.RemoteFolderName
+		folder.Parent = RS
+	end
+	for _, n in ipairs(Config.RemoteEvents) do
+		if not folder:FindFirstChild(n) then
+			local r = Instance.new("RemoteEvent"); r.Name = n; r.Parent = folder
+		end
+	end
+	for _, n in ipairs(Config.RemoteFunctions) do
+		if not folder:FindFirstChild(n) then
+			local r = Instance.new("RemoteFunction"); r.Name = n; r.Parent = folder
+		end
+	end
+end
+
+function Remotes.Get(name) return folder:WaitForChild(name) end
+
+return Remotes
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX33">
+            <Properties>
+              <string name="Name">StateService</string>
+              <ProtectedString name="Source">--[[ StateService (ModuleScript) -&gt; .../Modules/StateService
+	Estado por jogador (heroi) e por entidade (qualquer Character/NPC: stun, bloqueio, invulnerabilidade...).
+	Atributos replicados no Player para a SUA UI ler:
+	MiraculousId, HeroId, IsTransformed, Energy, MaxEnergy, IsVillain, VillainId, IsBlocking,
+	Cd_&lt;PowerId&gt; (timestamp fim do cooldown, compare com workspace:GetServerTimeNow()), DetransformAt ]]
+local RS = game:GetService("ReplicatedStorage")
+local Config = require(RS.MiraculousShared.Config)
+
+local State = {}
+local players = {}
+local entities = setmetatable({}, { __mode = "k" })
+
+function State.Get(player)
+	local s = players[player]
+	if not s then
+		s = {
+			Miraculous = nil, Transformed = false, HeroId = nil, Busy = false,
+			Cooldowns = {}, Flags = {}, Energy = Config.Energy.Max, MaxEnergy = Config.Energy.Max,
+			Combo = 0, LastAttack = 0, LastTransform = 0, TimerToken = 0, Token = 0,
+			Snapshot = nil, Weapons = {}, Villain = nil,
+		}
+		players[player] = s
+	end
+	return s
+end
+
+function State.Remove(player) players[player] = nil end
+function State.AllPlayers() return players end
+
+function State.Reset(player)
+	local s = State.Get(player)
+	s.Transformed, s.HeroId, s.Busy = false, nil, false
+	s.Flags, s.Combo, s.Snapshot, s.Weapons, s.Villain = {}, 0, nil, {}, nil
+	s.Token += 1
+	s.TimerToken += 1
+	s.Energy = s.MaxEnergy
+	player:SetAttribute("IsTransformed", false)
+	player:SetAttribute("HeroId", nil)
+	player:SetAttribute("IsVillain", false)
+	player:SetAttribute("VillainId", nil)
+	player:SetAttribute("IsBlocking", false)
+	player:SetAttribute("DetransformAt", nil)
+	player:SetAttribute("Energy", s.Energy)
+	player:SetAttribute("MaxEnergy", s.MaxEnergy)
+end
+
+-- Entidade (Model com Humanoid)
+function State.Entity(char)
+	local e = entities[char]
+	if not e then
+		e = { InvulnUntil = 0, StunUntil = 0, ConfusedUntil = 0, Blocking = false, BlockStart = 0 }
+		entities[char] = e
+	end
+	return e
+end
+
+function State.StartCooldown(player, id, seconds)
+	local s = State.Get(player)
+	s.Cooldowns[id] = os.clock() + seconds
+	player:SetAttribute("Cd_" .. id, workspace:GetServerTimeNow() + seconds)
+end
+
+function State.OnCooldown(player, id)
+	local t = State.Get(player).Cooldowns[id]
+	return t ~= nil and os.clock() &lt; t
+end
+
+function State.ClearCooldowns(player)
+	local s = State.Get(player)
+	for id in pairs(s.Cooldowns) do player:SetAttribute("Cd_" .. id, nil) end
+	s.Cooldowns = {}
+end
+
+function State.SetEnergy(player, v)
+	local s = State.Get(player)
+	s.Energy = math.clamp(v, 0, s.MaxEnergy)
+	player:SetAttribute("Energy", s.Energy)
+end
+
+function State.RegenTick(dt)
+	for player, s in pairs(players) do
+		if s.Energy &lt; s.MaxEnergy then
+			State.SetEnergy(player, s.Energy + Config.Energy.RegenPerSecond * dt)
+		end
+	end
+end
+
+return State
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX34">
+            <Properties>
+              <string name="Name">TransformService</string>
+              <ProtectedString name="Source">--[[ TransformService (ModuleScript) -&gt; .../Modules/TransformService
+	Seleção de Miraculous, transformação, destransformação e timer do Miraculous. ]]
+local Players = game:GetService("Players")
+local RS = game:GetService("ReplicatedStorage")
+local Chat = game:GetService("Chat")
+
+local Config = require(RS.MiraculousShared.Config)
+local Util = require(RS.MiraculousShared.Util)
+local Registry = require(RS.MiraculousShared.MiraculousRegistry)
+local State = require(script.Parent.StateService)
+local Appearance = require(script.Parent.AppearanceService)
+local Combat = require(script.Parent.CombatService)
+local VFX = require(script.Parent.VFXBroadcast)
+
+local T = {}
+local holders = {} -- [heroId] = player
+
+local function say(char, text)
+	local head = char:FindFirstChild("Head")
+	if head then pcall(function() Chat:Chat(head, text, Enum.ChatColor.White) end) end
+end
+
+function T.Select(player, id)
+	local s = State.Get(player)
+	if s.Transformed or s.Busy or s.Villain then return false, "Ocupado" end
+	if id == nil or id == "" then
+		if s.Miraculous then holders[s.Miraculous] = nil end
+		s.Miraculous = nil
+		player:SetAttribute("MiraculousId", nil)
+		return true, "Miraculous devolvido"
+	end
+	local hero = Registry.Get(id)
+	if not hero then return false, "Miraculous inexistente" end
+	if Config.Ownership.Mode == "Attribute" and player:GetAttribute(Config.Ownership.AttributePrefix .. id) ~= true then
+		return false, "Você não possui este Miraculous"
+	end
+	if Config.UniqueHolders and holders[id] and holders[id] ~= player and holders[id].Parent then
+		return false, "Outro jogador está com este Miraculous"
+	end
+	if s.Miraculous then holders[s.Miraculous] = nil end
+	holders[id] = player
+	s.Miraculous = id
+	player:SetAttribute("MiraculousId", id)
+	return true, hero.HeroName
+end
+
+function T.Release(player)
+	local s = State.Get(player)
+	if s.Miraculous and holders[s.Miraculous] == player then holders[s.Miraculous] = nil end
+end
+
+local function applyStats(char, hero, s)
+	local hum = char:FindFirstChildOfClass("Humanoid")
+	local pct = hum.Health / math.max(hum.MaxHealth, 1)
+	hum.UseJumpPower = true
+	hum.MaxHealth = hero.Stats.MaxHealth
+	hum.Health = hero.Stats.MaxHealth * pct
+	hum.WalkSpeed = hero.Stats.WalkSpeed
+	hum.JumpPower = hero.Stats.JumpPower
+end
+
+function T.Transform(player)
+	local s = State.Get(player)
+	local char = player.Character
+	if not s.Miraculous or s.Transformed or s.Busy or s.Villain or not Util.IsAlive(char) then return false end
+	if os.clock() - s.LastTransform &lt; Config.Transform.Cooldown then return false end
+	local hero = Registry.Get(s.Miraculous)
+	local hum, hrp = Util.GetParts(char)
+
+	s.Busy = true
+	s.Token += 1
+	local token = s.Token
+	local dur = Config.Transform.Duration
+	local function valid() return s.Token == token and Util.IsAlive(char) and player.Character == char end
+
+	hrp.Anchored = true
+	Combat.SetInvulnerable(char, dur + 0.5)
+	say(char, hero.Phrases.Transform)
+	VFX.Cinematic(player, "Transform", { Char = char, Duration = dur })
+	VFX.Play("Transform", { Char = char, HeroId = hero.Id, Duration = dur })
+
+	task.wait(dur * Config.Transform.SuitSwapAt)
+	if not valid() then
+		if hrp.Parent then hrp.Anchored = false end
+		s.Busy = false
+		return false
+	end
+	s.Snapshot = Appearance.Snapshot(char)
+	Appearance.ApplyHero(char, hero)
+	applyStats(char, hero, s)
+	s.Weapons = Appearance.GiveWeapon(player, char, hero)
+	s.Transformed, s.HeroId, s.Flags = true, hero.Id, {}
+	s.MaxEnergy = Config.Energy.Max
+	State.SetEnergy(player, s.MaxEnergy)
+	State.ClearCooldowns(player)
+	player:SetAttribute("IsTransformed", true)
+	player:SetAttribute("HeroId", hero.Id)
+	VFX.Anim(char, "HeroPose")
+
+	task.wait(dur * (1 - Config.Transform.SuitSwapAt))
+	if hrp.Parent then hrp.Anchored = false end
+	s.Busy = false
+	s.LastTransform = os.clock()
+	if Config.Transform.MaxTransformedSeconds then T.StartTimer(player, Config.Transform.MaxTransformedSeconds) end
+	return valid()
+end
+
+function T.Detransform(player, instant)
+	local s = State.Get(player)
+	local char = player.Character
+	if not s.Transformed or s.Busy then return false end
+	local hero = Registry.Get(s.HeroId)
+	s.Busy = true
+	s.TimerToken += 1
+	player:SetAttribute("DetransformAt", nil)
+	local token = s.Token
+	if char and Util.IsAlive(char) then
+		Combat.SetBlock(player, false)
+		if not instant then
+			say(char, hero.Phrases.Detransform)
+			VFX.Play("Detransform", { Char = char, HeroId = hero.Id, Duration = Config.Transform.DetransformDuration })
+			task.wait(Config.Transform.DetransformDuration * 0.6)
+		end
+		if s.Token == token and Util.IsAlive(char) then
+			Appearance.Restore(char, s.Snapshot)
+			local hum = char:FindFirstChildOfClass("Humanoid")
+			local st = s.Snapshot and s.Snapshot.Stats
+			local pct = hum.Health / math.max(hum.MaxHealth, 1)
+			hum.MaxHealth = st and st.MaxHealth or 100
+			hum.Health = hum.MaxHealth * pct
+			hum.WalkSpeed = st and st.WalkSpeed or 16
+			hum.JumpPower = st and st.JumpPower or 50
+			Combat.ClearStun(char)
+		end
+	end
+	for _, w in ipairs(s.Weapons) do if w.Parent then w:Destroy() end end
+	local keepMiraculous = s.Miraculous
+	State.Reset(player)
+	s.Miraculous = keepMiraculous
+	s.LastTransform = os.clock()
+	State.ClearCooldowns(player)
+	return true
+end
+
+-- Timer do Miraculous (os brincos "apitando"): destransforma automaticamente
+function T.StartTimer(player, seconds)
+	local s = State.Get(player)
+	if not s.Transformed then return end
+	s.TimerToken += 1
+	local token = s.TimerToken
+	player:SetAttribute("DetransformAt", workspace:GetServerTimeNow() + seconds)
+	task.delay(seconds, function()
+		if s.TimerToken == token and s.Transformed then
+			VFX.Notify(player, "O Miraculous está se esgotando!")
+			T.Detransform(player, false)
+		end
+	end)
+end
+
+return T
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX35">
+            <Properties>
+              <string name="Name">VFXBroadcast</string>
+              <ProtectedString name="Source">--[[ VFXBroadcast (ModuleScript) -&gt; .../Modules/VFXBroadcast
+	O servidor só DECIDE e avisa; os clientes desenham os efeitos (VFX/Effects). ]]
+local Remotes = require(script.Parent.Remotes)
+
+local VFX = {}
+
+function VFX.Play(name, data)
+	Remotes.Get("PlayVFX"):FireAllClients(name, data or {})
+end
+
+function VFX.PlayTo(player, name, data)
+	Remotes.Get("PlayVFX"):FireClient(player, name, data or {})
+end
+
+function VFX.Anim(char, name)
+	Remotes.Get("PlayAnim"):FireAllClients(char, name)
+end
+
+function VFX.Cinematic(player, name, data)
+	Remotes.Get("Cinematic"):FireClient(player, name, data or {})
+end
+
+function VFX.Notify(player, text)
+	Remotes.Get("Notify"):FireClient(player, text)
+end
+
+return VFX
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX36">
+            <Properties>
+              <string name="Name">Validation</string>
+              <ProtectedString name="Source">--[[ Validation (ModuleScript) -&gt; .../Modules/Validation
+	Anti-abuso de RemoteEvents: rate limit por jogador/ação e checagem de tipos. ]]
+local Validation = {}
+local last = {} -- [player] = { [key] = time }
+
+function Validation.Allow(player, key, minInterval)
+	local t = os.clock()
+	local p = last[player]
+	if not p then p = {}; last[player] = p end
+	if p[key] and t - p[key] &lt; minInterval then return false end
+	p[key] = t
+	return true
+end
+
+function Validation.Clear(player) last[player] = nil end
+
+function Validation.IsString(v, maxLen) return type(v) == "string" and #v &lt;= (maxLen or 64) end
+function Validation.IsVec3(v)
+	return typeof(v) == "Vector3" and v.X == v.X and v.Y == v.Y and v.Z == v.Z
+		and math.abs(v.X) &lt; 1e5 and math.abs(v.Y) &lt; 1e5 and math.abs(v.Z) &lt; 1e5
+end
+function Validation.IsBool(v) return type(v) == "boolean" end
+function Validation.IsInt(v, lo, hi) return type(v) == "number" and v % 1 == 0 and v &gt;= lo and v &lt;= hi end
+
+-- Valida/limita o ponto de mira enviado pelo cliente
+function Validation.Aim(origin, aim, maxDist)
+	if not Validation.IsVec3(aim) then return nil end
+	local d = aim - origin
+	if d.Magnitude &gt; maxDist then aim = origin + d.Unit * maxDist end
+	return aim
+end
+
+return Validation
+</ProtectedString>
+            </Properties>
+          </Item>
+        </Item>
+        <Item class="Folder" referent="RBX37">
+          <Properties>
+            <string name="Name">Powers</string>
+          </Properties>
+          <Item class="ModuleScript" referent="RBX38">
+            <Properties>
+              <string name="Name">Carapace</string>
+              <ProtectedString name="Source">--[[ Poderes do Carapace -&gt; ServerScriptService/MiraculousServer/Powers/Carapace
+	Shell-ter: domo que ABSORVE dano vindo de fora para quem está dentro (CombatService.AddShield).
+	Shell Spin: investida giratória com dano em área. ]]
+local Carapace = {}
+local D
+
+function Carapace._Init(deps) D = deps end
+
+Carapace.Shellter = {
+	Cast = function(ctx)
+		local origin = ctx.Aim
+		if (origin - ctx.HRP.Position).Magnitude &gt; ctx.Power.Range then
+			origin = ctx.HRP.Position + D.Util.Unit(origin - ctx.HRP.Position) * ctx.Power.Range
+		end
+		origin = Vector3.new(origin.X, ctx.HRP.Position.Y, origin.Z)
+		D.Combat.AddShield(ctx.Char, origin, 22, 500, 14)
+		D.VFX.Play("Shellter", { Position = origin, Radius = 22, Char = ctx.Char, Color = ctx.Hero.Colors.Glow })
+		D.VFX.Cinematic(ctx.Player, "Power", { Char = ctx.Char, Duration = 1.4, Kind = "Up" })
+	end,
+}
+
+Carapace.ShellSpin = {
+	Cast = function(ctx)
+		D.Combat.SetInvulnerable(ctx.Char, 0.8)
+		D.Combat.Launch(ctx.Char, ctx.HRP.CFrame.LookVector * 75 + Vector3.new(0, 10, 0))
+		D.VFX.Play("ShellSpin", { Char = ctx.Char, Duration = 0.9, Color = ctx.Hero.Colors.Glow })
+		for i = 0, 3 do
+			task.delay(0.15 + i * 0.18, function()
+				if D.Util.IsAlive(ctx.Char) then
+					D.Combat.AoE(ctx.Char, ctx.HRP.Position, 10, 9 * ctx.Hero.Stats.AttackMult, { Knockback = 45, Color = ctx.Hero.Colors.Glow })
+				end
+			end)
+		end
+	end,
+}
+
+return Carapace
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX39">
+            <Properties>
+              <string name="Name">CatNoir</string>
+              <ProtectedString name="Source">--[[ Poderes do Cat Noir -&gt; ServerScriptService/MiraculousServer/Powers/CatNoir
+	Cataclysm: o próximo golpe corpo a corpo causa dano enorme e DESTRÓI qualquer Part com a Tag "Destructible".
+	Baton Leap: salto longo. Staff Spin: giro defensivo (invulnerável + dano em área). ]]
+local CollectionService = game:GetService("CollectionService")
+
+local Cat = {}
+local D
+local CATA_SECONDS = 12
+local CATA_DAMAGE_MULT = 4
+
+local function decay(part)
+	D.History.RegisterDestroyed(part)
+	D.VFX.Play("CataclysmHit", { Position = part.Position, Size = math.clamp(part.Size.Magnitude, 4, 30) })
+	part.Anchored = true
+	part.CanCollide = false
+	for _, d in ipairs(part:GetDescendants()) do
+		if d:IsA("BasePart") then d.CanCollide = false end
+	end
+	D.Util.Tween(part, 0.9, { Color = Color3.new(0.05, 0, 0.05), Transparency = 1 })
+	task.delay(1, function() if part.Parent then part:Destroy() end end)
+end
+
+function Cat._Init(deps)
+	D = deps
+	D.Combat.MeleeModifiers[#D.Combat.MeleeModifiers + 1] = function(player, parts, chars)
+		local s = D.State.Get(player)
+		local until_ = s.Flags.CataclysmUntil
+		if not (until_ and os.clock() &lt; until_) then return nil end
+		if s.HeroId ~= "CatNoir" then return nil end
+		local used = #chars &gt; 0
+		for _, p in ipairs(parts) do
+			if CollectionService:HasTag(p, "Destructible") then
+				used = true
+				decay(p)
+			end
+		end
+		if not used then return nil end -- só gasta ao tocar em algo
+		s.Flags.CataclysmUntil = nil
+		D.VFX.Play("CataclysmEnd", { Char = player.Character })
+		return CATA_DAMAGE_MULT
+	end
+end
+
+Cat.Cataclysm = {
+	CanUse = function(ctx)
+		local u = ctx.S.Flags.CataclysmUntil
+		if u and os.clock() &lt; u then return false, "Cataclysm já está ativo" end
+		return true
+	end,
+	Cast = function(ctx)
+		ctx.S.Flags.CataclysmUntil = os.clock() + CATA_SECONDS
+		D.VFX.Play("CataclysmCharge", { Char = ctx.Char, Duration = CATA_SECONDS })
+		D.VFX.Cinematic(ctx.Player, "Power", { Char = ctx.Char, Duration = 1.4, Kind = "Hand" })
+		task.delay(CATA_SECONDS, function()
+			local u = ctx.S.Flags.CataclysmUntil
+			if u and os.clock() &gt;= u then
+				ctx.S.Flags.CataclysmUntil = nil
+				D.VFX.Play("CataclysmEnd", { Char = ctx.Char })
+			end
+		end)
+	end,
+}
+
+Cat.BatonLeap = {
+	Cast = function(ctx)
+		local flat = D.Util.Flat(ctx.Aim - ctx.HRP.Position)
+		local dir = D.Util.Unit(flat, ctx.HRP.CFrame.LookVector)
+		local speed = math.clamp(flat.Magnitude * 1.5, 30, 85)
+		D.Combat.Launch(ctx.Char, dir * speed + Vector3.new(0, 62, 0))
+		D.VFX.Play("BatonLeap", { Char = ctx.Char, Color = ctx.Hero.Colors.Glow })
+	end,
+}
+
+Cat.StaffSpin = {
+	Cast = function(ctx)
+		D.Combat.SetInvulnerable(ctx.Char, 1.5)
+		D.VFX.Play("StaffSpin", { Char = ctx.Char, Duration = 1.5, Color = ctx.Hero.Colors.Glow })
+		for i = 0, 2 do
+			task.delay(0.35 * i, function()
+				if D.Util.IsAlive(ctx.Char) then
+					D.Combat.AoE(ctx.Char, ctx.HRP.Position, 11, 9 * ctx.Hero.Stats.AttackMult, { Knockback = 35, Color = ctx.Hero.Colors.Glow })
+				end
+			end)
+		end
+	end,
+}
+
+return Cat
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX40">
+            <Properties>
+              <string name="Name">Ladybug</string>
+              <ProtectedString name="Source">--[[ Poderes da Ladybug -&gt; ServerScriptService/MiraculousServer/Powers/Ladybug
+	Lucky Charm: entrega um item aleatório (ServerStorage/LuckyItems) ou um item padrão gerado por script.
+	Miraculous Ladybug: cura todos no raio, restaura partes destruídas, remove stun e consome o Lucky Charm.
+	Yo-yo Swing: arremessa a heroína até o ponto mirado (validado por raycast no servidor). ]]
+local SS = game:GetService("ServerStorage")
+local CollectionService = game:GetService("CollectionService")
+
+local Ladybug = {}
+local D
+
+function Ladybug._Init(deps) D = deps end
+
+local function fallbackItem()
+	local tool = Instance.new("Tool")
+	tool.Name = "Lucky Charm"
+	tool.RequiresHandle = true
+	local h = Instance.new("Part")
+	h.Name = "Handle"; h.Shape = Enum.PartType.Ball; h.Size = Vector3.one * 1.6
+	h.Color = Color3.fromRGB(230, 25, 45); h.Material = Enum.Material.SmoothPlastic
+	h.Parent = tool
+	for i = 1, 6 do
+		local dot = Instance.new("Part")
+		dot.Shape = Enum.PartType.Ball; dot.Size = Vector3.one * 0.35; dot.Color = Color3.new(0, 0, 0)
+		dot.Massless = true; dot.CanCollide = false
+		local dir = Vector3.new(math.cos(i * 1.05), math.sin(i * 2.1), math.sin(i * 1.05)).Unit
+		dot.CFrame = h.CFrame * CFrame.new(dir * 0.75)
+		local w = Instance.new("WeldConstraint"); w.Part0 = h; w.Part1 = dot; w.Parent = h
+		dot.Parent = tool
+	end
+	return tool
+end
+
+Ladybug.LuckyCharm = {
+	CanUse = function(ctx)
+		if ctx.S.Flags.LuckyCharm then return false, "Você já tem um Lucky Charm" end
+		return true
+	end,
+	Cast = function(ctx)
+		local folder = SS:FindFirstChild(D.Config.Folders.LuckyItems)
+		local pool = folder and folder:GetChildren() or {}
+		local item
+		if #pool &gt; 0 then
+			local src = pool[math.random(#pool)]
+			item = src:Clone()
+			if not item:IsA("Tool") then
+				local tool = Instance.new("Tool"); tool.Name = src.Name; tool.RequiresHandle = false
+				item.Parent = tool
+				item = tool
+			end
+		else
+			item = fallbackItem()
+		end
+		item:SetAttribute("LuckyCharmItem", true)
+		item.Parent = ctx.Player:FindFirstChildOfClass("Backpack")
+		ctx.Hum:EquipTool(item)
+		ctx.S.Flags.LuckyCharm = true
+		ctx.S.LuckyItem = item
+		D.VFX.Play("LuckyCharm", { Char = ctx.Char, Position = ctx.HRP.Position + Vector3.new(0, 6, 0), Color = ctx.Hero.Colors.Glow })
+		D.VFX.PlayTo(ctx.Player, "LuckyVision", { Duration = 14 })
+		D.VFX.Cinematic(ctx.Player, "Power", { Char = ctx.Char, Duration = 1.6, Kind = "Up" })
+	end,
+}
+
+Ladybug.MiraculousLadybug = {
+	Cast = function(ctx)
+		local radius = ctx.Power.Range
+		local origin = ctx.HRP.Position
+		D.VFX.Play("MiraculousLadybug", { Position = origin, Radius = radius, Char = ctx.Char })
+		D.VFX.Cinematic(ctx.Player, "Power", { Char = ctx.Char, Duration = 2.4, Kind = "Up" })
+		task.delay(1.2, function() -- a "onda" de joaninhas passa e restaura tudo
+			local parts = workspace:GetPartBoundsInRadius(origin, radius)
+			for _, ch in ipairs(D.Util.CharsFromParts(parts, nil)) do
+				local hum = ch:FindFirstChildOfClass("Humanoid")
+				if hum and D.Combat.GetFaction(ch) ~= "Villain" then
+					hum.Health = hum.MaxHealth
+					D.Combat.ClearStun(ch)
+					D.VFX.Play("Heal", { Char = ch })
+				end
+			end
+			D.History.RestoreAllDestroyed()
+		end)
+		if ctx.S.LuckyItem then ctx.S.LuckyItem:Destroy(); ctx.S.LuckyItem = nil end
+		ctx.S.Flags.LuckyCharm = nil
+	end,
+}
+
+Ladybug.YoyoSwing = {
+	Cast = function(ctx)
+		local origin = ctx.HRP.Position + Vector3.new(0, 2, 0)
+		local rp = RaycastParams.new()
+		rp.FilterDescendantsInstances = { ctx.Char }
+		rp.FilterType = Enum.RaycastFilterType.Exclude
+		local dir = ctx.Aim - origin
+		local res = workspace:Raycast(origin, dir.Unit * math.min(dir.Magnitude + 3, ctx.Power.Range), rp)
+		local dest = res and res.Position or ctx.Aim
+		D.VFX.Play("Yoyo", { Char = ctx.Char, To = dest, Color = ctx.Hero.Colors.Primary })
+		local flat = dest - ctx.HRP.Position
+		local up = math.clamp(flat.Y * 0.9 + 30, 20, 70)
+		local horiz = Vector3.new(flat.X, 0, flat.Z)
+		local speed = math.clamp(horiz.Magnitude * 1.6, 25, 95)
+		D.Combat.Launch(ctx.Char, D.Util.Unit(horiz) * speed + Vector3.new(0, up, 0))
+		if res then
+			local parts = { res.Instance }
+			for _, ch in ipairs(D.Util.CharsFromParts(parts, ctx.Char)) do
+				D.Combat.Damage(ctx.Char, ch, 10, { Color = ctx.Hero.Colors.Glow, Stun = 0.6 })
+			end
+		end
+	end,
+}
+
+return Ladybug
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX41">
+            <Properties>
+              <string name="Name">RenaRouge</string>
+              <ProtectedString name="Source">--[[ Poderes da Rena Rouge -&gt; ServerScriptService/MiraculousServer/Powers/RenaRouge
+	Mirage: cria ilusões (clones) que atraem os inimigos e deixa inimigos próximos CONFUSOS (50% de chance de errar).
+	Flute Blast: onda sonora em cone com knockback. ]]
+local CollectionService = game:GetService("CollectionService")
+
+local Rena = {}
+local D
+local MIRAGE_SECONDS = 12
+local DECOYS = 3
+
+function Rena._Init(deps) D = deps end
+
+local function makeDecoy(owner, pos, lifetime)
+	owner.Archivable = true
+	local clone = owner:Clone()
+	if not clone then return end
+	for _, d in ipairs(clone:GetDescendants()) do
+		if d:IsA("Script") or d:IsA("LocalScript") or d:IsA("Tool") then d:Destroy() end
+	end
+	clone.Name = "Mirage_" .. owner.Name
+	clone:SetAttribute("Faction", "Decoy")
+	CollectionService:AddTag(clone, "Decoy")
+	local hum = clone:FindFirstChildOfClass("Humanoid")
+	if not hum then clone:Destroy() return end
+	hum.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+	hum.MaxHealth, hum.Health = 40, 40
+	hum.WalkSpeed = 14
+	clone:PivotTo(CFrame.new(pos + Vector3.new(0, 3, 0)))
+	clone.Parent = workspace
+	local hrp = clone:FindFirstChild("HumanoidRootPart")
+	if hrp then pcall(function() hrp:SetNetworkOwner(nil) end) end
+	D.VFX.Play("MirageAppear", { Position = pos, Color = Color3.fromRGB(255, 160, 60) })
+	-- vagueia ao redor
+	task.spawn(function()
+		local t0 = os.clock()
+		while os.clock() - t0 &lt; lifetime and clone.Parent and hum.Health &gt; 0 do
+			local offset = Vector3.new(math.random(-14, 14), 0, math.random(-14, 14))
+			hum:MoveTo(pos + offset)
+			task.wait(1.5)
+		end
+		if clone.Parent then
+			D.VFX.Play("MirageAppear", { Position = hrp and hrp.Position or pos, Color = Color3.fromRGB(255, 160, 60) })
+			clone:Destroy()
+		end
+	end)
+	return clone
+end
+
+Rena.Mirage = {
+	Cast = function(ctx)
+		local center = ctx.Aim
+		D.VFX.Play("Mirage", { Char = ctx.Char, Position = center, Radius = 40, Color = ctx.Hero.Colors.Glow })
+		D.VFX.Cinematic(ctx.Player, "Power", { Char = ctx.Char, Duration = 1.5, Kind = "Up" })
+		for i = 1, DECOYS do
+			local a = (i / DECOYS) * math.pi * 2
+			makeDecoy(ctx.Char, center + Vector3.new(math.cos(a) * 8, 0, math.sin(a) * 8), MIRAGE_SECONDS)
+		end
+		-- confusão em inimigos no raio
+		local parts = workspace:GetPartBoundsInRadius(center, 40)
+		for _, ch in ipairs(D.Util.CharsFromParts(parts, ctx.Char)) do
+			if D.Combat.CanDamage(ctx.Char, ch) then D.Combat.Confuse(ch, 8) end
+		end
+	end,
+}
+
+Rena.FluteBlast = {
+	Cast = function(ctx)
+		local cf = ctx.HRP.CFrame * CFrame.new(0, 0, -14)
+		D.VFX.Play("FluteBlast", { Char = ctx.Char, Color = ctx.Hero.Colors.Glow })
+		task.delay(0.2, function()
+			if D.Util.IsAlive(ctx.Char) then
+				D.Combat.Box(ctx.Char, cf, Vector3.new(16, 8, 28), 16 * ctx.Hero.Stats.AttackMult, { Knockback = 50, Stun = 0.5, Color = ctx.Hero.Colors.Glow })
+			end
+		end)
+	end,
+}
+
+return Rena
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX42">
+            <Properties>
+              <string name="Name">Ryuko</string>
+              <ProtectedString name="Source">--[[ Poderes da Ryuko (elementais) -&gt; ServerScriptService/MiraculousServer/Powers/Ryuko
+	Lightning: raio telegrafado no ponto mirado. Gale: rajada de vento em cone. Wave: onda d'água projétil.
+	Flame: explosão de chamas com dano contínuo (queimadura). ]]
+local Ryuko = {}
+local D
+
+function Ryuko._Init(deps) D = deps end
+
+Ryuko.Lightning = {
+	Cast = function(ctx)
+		local pos = ctx.Aim
+		D.VFX.Play("LightningWarn", { Position = pos, Radius = 10, Delay = 0.7 })
+		task.delay(0.7, function()
+			D.VFX.Play("LightningStrike", { Position = pos, Radius = 10 })
+			if D.Util.IsAlive(ctx.Char) then
+				D.Combat.AoE(ctx.Char, pos, 10, 38 * ctx.Hero.Stats.AttackMult, { Stun = 1.0, Knockback = 25, Color = Color3.fromRGB(200, 230, 255), Unblockable = false })
+			end
+		end)
+	end,
+}
+
+Ryuko.Gale = {
+	Cast = function(ctx)
+		D.VFX.Play("Gale", { Char = ctx.Char })
+		local cf = ctx.HRP.CFrame * CFrame.new(0, 0, -15)
+		task.delay(0.2, function()
+			if D.Util.IsAlive(ctx.Char) then
+				D.Combat.Box(ctx.Char, cf, Vector3.new(20, 8, 30), 12 * ctx.Hero.Stats.AttackMult, { Knockback = 85, Color = Color3.fromRGB(220, 255, 240) })
+			end
+		end)
+	end,
+}
+
+Ryuko.Wave = {
+	Cast = function(ctx)
+		local dir = D.Util.Unit(D.Util.Flat(ctx.Aim - ctx.HRP.Position), ctx.HRP.CFrame.LookVector)
+		D.VFX.Play("Wave", { Char = ctx.Char, Direction = dir })
+		D.Combat.Projectile({
+			Attacker = ctx.Char, Origin = ctx.HRP.Position + dir * 4, Direction = dir, Speed = 60, Range = 70,
+			Radius = 5, Damage = 22 * ctx.Hero.Stats.AttackMult, Color = Color3.fromRGB(70, 170, 255), Pierce = true,
+			Opts = { Knockback = 55, Color = Color3.fromRGB(70, 170, 255) },
+		})
+	end,
+}
+
+Ryuko.Flame = {
+	Cast = function(ctx)
+		D.VFX.Play("Flame", { Char = ctx.Char, Position = ctx.HRP.Position })
+		local origin = ctx.HRP.Position
+		for tick = 0, 3 do
+			task.delay(0.25 + tick * 0.5, function()
+				if D.Util.IsAlive(ctx.Char) then
+					D.Combat.AoE(ctx.Char, origin, 14, 10 * ctx.Hero.Stats.AttackMult, { Color = Color3.fromRGB(255, 140, 40), NoVFX = tick &gt; 0 })
+				end
+			end)
+		end
+	end,
+}
+
+return Ryuko
+</ProtectedString>
+            </Properties>
+          </Item>
+          <Item class="ModuleScript" referent="RBX43">
+            <Properties>
+              <string name="Name">Viperion</string>
+              <ProtectedString name="Source">--[[ Poderes do Viperion -&gt; ServerScriptService/MiraculousServer/Powers/Viperion
+	Second Chance: volta o mundo (posição/vida de jogadores e entidades "Rewindable", partes destruídas)
+	Config.Rewind.Seconds atrás, de verdade, usando o HistoryService.
+	Lyre Wave: projétil sonoro que atordoa. ]]
+local Config = require(game:GetService("ReplicatedStorage").MiraculousShared.Config)
+
+local Viperion = {}
+local D
+
+function Viperion._Init(deps) D = deps end
+
+Viperion.SecondChance = {
+	Cast = function(ctx)
+		D.VFX.Play("SecondChance", { Position = ctx.HRP.Position, Color = ctx.Hero.Colors.Glow, Duration = 2.2 })
+		D.VFX.Cinematic(ctx.Player, "Power", { Char = ctx.Char, Duration = 2.2, Kind = "Up" })
+		task.delay(1.0, function()
+			local n = D.History.Rewind(Config.Rewind.Seconds)
+			D.VFX.Notify(ctx.Player, "Segunda chance: " .. n .. " entidades restauradas")
+		end)
+	end,
+}
+
+Viperion.LyreWave = {
+	Cast = function(ctx)
+		local dir = D.Util.Unit(ctx.Aim - ctx.HRP.Position, ctx.HRP.CFrame.LookVector)
+		D.VFX.Play("LyreWave", { Char = ctx.Char, Color = ctx.Hero.Colors.Glow })
+		D.Combat.Projectile({
+			Attacker = ctx.Char, Origin = ctx.HRP.Position + dir * 3, Direction = dir, Speed = 90, Range = 80,
+			Radius = 3, Damage = 14 * ctx.Hero.Stats.AttackMult, Color = ctx.Hero.Colors.Glow, Pierce = true,
+			Opts = { Stun = 1.6, Color = ctx.Hero.Colors.Glow },
+		})
+	end,
+}
+
+return Viperion
+</ProtectedString>
+            </Properties>
+          </Item>
+        </Item>
+      </Item>
+    </Item>
+    <Item class="StarterPlayer" referent="RBX3">
+      <Properties>
+        <string name="Name">StarterPlayer</string>
+      </Properties>
+      <Item class="StarterPlayerScripts" referent="RBX4">
+        <Properties>
+          <string name="Name">StarterPlayerScripts</string>
+        </Properties>
+        <Item class="LocalScript" referent="RBX44">
+          <Properties>
+            <string name="Name">MiraculousClient</string>
+            <ProtectedString name="Source">--[[
+	MiraculousClient (LocalScript) -&gt; StarterPlayer/StarterPlayerScripts/MiraculousClient
+	Filho: Folder "Modules" com AnimController, CameraController, InputController, VFXController.
+]]
+local RS = game:GetService("ReplicatedStorage")
+
+local Shared = RS:WaitForChild("MiraculousShared")
+local Config = require(Shared.Config)
+local Registry = require(Shared.MiraculousRegistry)
+Registry.Init(Shared:WaitForChild("Heroes"))
+
+local remotes = RS:WaitForChild(Config.RemoteFolderName)
+local Modules = script:WaitForChild("Modules")
+
+require(Modules.VFXController).Init(remotes)
+require(Modules.AnimController).Init(remotes)
+require(Modules.CameraController).Init(remotes)
+require(Modules.InputController).Init()
+</ProtectedString>
+          </Properties>
+          <Item class="Folder" referent="RBX45">
+            <Properties>
+              <string name="Name">Modules</string>
+            </Properties>
+            <Item class="ModuleScript" referent="RBX46">
+              <Properties>
+                <string name="Name">AnimController</string>
+                <ProtectedString name="Source">--[[ AnimController (ModuleScript) -&gt; MiraculousClient/Modules/AnimController
+	Animações procedurais R6 SEM IDs: mexe nos C0 dos Motor6D (ombros, quadris, RootJoint).
+	O servidor manda "PlayAnim"(char, nome) para todos, então todos veem os golpes. ]]
+local TweenService = game:GetService("TweenService")
+
+local Anim = {}
+local cache = setmetatable({}, { __mode = "k" })
+local rad = math.rad
+
+local function motors(char)
+	local c = cache[char]
+	if c then return c end
+	local torso = char:FindFirstChild("Torso")
+	local hrp = char:FindFirstChild("HumanoidRootPart")
+	if not (torso and hrp) then return nil end -- só R6
+	c = { token = 0, m = {} }
+	local function reg(key, motor)
+		if motor and motor:IsA("Motor6D") then c.m[key] = { motor = motor, orig = motor.C0 } end
+	end
+	reg("RS", torso:FindFirstChild("Right Shoulder"))
+	reg("LS", torso:FindFirstChild("Left Shoulder"))
+	reg("RH", torso:FindFirstChild("Right Hip"))
+	reg("LH", torso:FindFirstChild("Left Hip"))
+	reg("Root", hrp:FindFirstChild("RootJoint"))
+	reg("Neck", torso:FindFirstChild("Neck"))
+	cache[char] = c
+	return c
+end
+
+-- Rotações (ver comentário no README): ombro/quadril direito + = frente; esquerdo - = frente
+local function R(a) return CFrame.Angles(0, 0, rad(a)) end
+local function L(a) return CFrame.Angles(0, 0, -rad(a)) end
+
+local poses = {
+	Punch1 = { t = 0.07, hold = 0.08, out = 0.18, set = { RS = R(95), LS = L(20), Root = CFrame.Angles(0, rad(-25), 0) } },
+	Punch2 = { t = 0.07, hold = 0.08, out = 0.18, set = { LS = L(95), RS = R(20), Root = CFrame.Angles(0, rad(25), 0) } },
+	Punch3 = { t = 0.08, hold = 0.1, out = 0.2, set = { RH = R(85), LS = L(40), RS = R(-30), Root = CFrame.Angles(rad(8), 0, 0) } },
+	Punch4 = { t = 0.12, hold = 0.14, out = 0.28, set = { RS = R(170), LS = L(150), Root = CFrame.Angles(rad(-18), 0, 0) } },
+	Cast = { t = 0.12, hold = 0.35, out = 0.25, set = { RS = R(100), LS = L(15) } },
+	Dodge = { t = 0.08, hold = 0.2, out = 0.2, set = { Root = CFrame.Angles(rad(-28), 0, 0), RS = R(-40), LS = L(-40), RH = R(35), LH = L(-25) } },
+	HeroPose = { t = 0.25, hold = 1.3, out = 0.4, set = { RS = R(160), LS = L(25), Root = CFrame.Angles(rad(8), rad(-15), 0), Neck = CFrame.Angles(0, 0, 0) } },
+	Block = { t = 0.1, hold = math.huge, out = 0.15, set = { RS = R(80), LS = L(80), Root = CFrame.Angles(rad(-6), 0, 0) } },
+}
+
+local function apply(char, set, tIn, hold, tOut)
+	local c = motors(char)
+	if not c then return end
+	c.token += 1
+	local token = c.token
+	-- volta tudo para o original antes (ao trocar de pose)
+	for key, entry in pairs(c.m) do
+		local target = set[key] and (entry.orig * set[key]) or entry.orig
+		TweenService:Create(entry.motor, TweenInfo.new(tIn, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), { C0 = target }):Play()
+	end
+	if hold == math.huge then return end
+	task.delay(tIn + hold, function()
+		if c.token ~= token then return end
+		for _, entry in pairs(c.m) do
+			TweenService:Create(entry.motor, TweenInfo.new(tOut, Enum.EasingStyle.Quad), { C0 = entry.orig }):Play()
+		end
+	end)
+end
+
+function Anim.Play(char, name)
+	if typeof(char) ~= "Instance" or not char.Parent then return end
+	if name == "BlockEnd" then
+		local c = motors(char)
+		if c then
+			c.token += 1
+			for _, entry in pairs(c.m) do
+				TweenService:Create(entry.motor, TweenInfo.new(0.15), { C0 = entry.orig }):Play()
+			end
+		end
+		return
+	end
+	local p = poses[name]
+	if p then apply(char, p.set, p.t, p.hold, p.out) end
+end
+
+function Anim.Init(remotes)
+	remotes:WaitForChild("PlayAnim").OnClientEvent:Connect(function(char, name)
+		if type(name) == "string" then Anim.Play(char, name) end
+	end)
+end
+
+return Anim
+</ProtectedString>
+              </Properties>
+            </Item>
+            <Item class="ModuleScript" referent="RBX47">
+              <Properties>
+                <string name="Name">CameraController</string>
+                <ProtectedString name="Source">--[[ CameraController (ModuleScript) -&gt; MiraculousClient/Modules/CameraController
+	Câmeras cinematográficas (transformação, poderes, akumatização). Sempre devolve a câmera ao controle normal. ]]
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+
+local Cam = {}
+local player = Players.LocalPlayer
+local active = false
+local token = 0
+local defaultFov = 70
+
+local function smooth(x) x = math.clamp(x, 0, 1) return x * x * (3 - 2 * x) end
+local function lerp(a, b, t) return a + (b - a) * t end
+
+local function finish(hum)
+	RunService:UnbindFromRenderStep("MiraculousCinematic")
+	local cam = workspace.CurrentCamera
+	cam.CameraType = Enum.CameraType.Custom
+	if hum and hum.Parent then cam.CameraSubject = hum end
+	cam.FieldOfView = defaultFov
+	active = false
+end
+
+-- frameFn(t01, ctx) -&gt; CFrame, fov
+local function run(duration, ctx, frameFn)
+	local char = ctx.char
+	local hum = char:FindFirstChildOfClass("Humanoid")
+	local hrp = char:FindFirstChild("HumanoidRootPart")
+	if not (hum and hrp) then return end
+	local cam = workspace.CurrentCamera
+	if active then finish(hum) end
+	active = true
+	token += 1
+	local my = token
+	defaultFov = cam.FieldOfView &gt; 1 and cam.FieldOfView or 70
+	local startCF = cam.CFrame
+	cam.CameraType = Enum.CameraType.Scriptable
+	local t0 = os.clock()
+	ctx.hrp, ctx.head = hrp, char:FindFirstChild("Head") or hrp
+
+	RunService:BindToRenderStep("MiraculousCinematic", Enum.RenderPriority.Camera.Value + 1, function()
+		local t = (os.clock() - t0) / duration
+		if t &gt;= 1 or my ~= token or not hrp.Parent or hum.Health &lt;= 0 then
+			if my == token then finish(hum) end
+			return
+		end
+		local cf, fov = frameFn(t, ctx)
+		-- entrada suave a partir da câmera do jogador, saída suave para trás do personagem
+		cf = startCF:Lerp(cf, smooth(t / 0.12))
+		if t &gt; 0.85 then
+			local back = CFrame.lookAt(hrp.Position - hrp.CFrame.LookVector * 12 + Vector3.new(0, 5, 0), hrp.Position + Vector3.new(0, 2, 0))
+			cf = cf:Lerp(back, smooth((t - 0.85) / 0.15))
+			fov = lerp(fov, defaultFov, smooth((t - 0.85) / 0.15))
+		end
+		cam.CFrame = cf
+		cam.FieldOfView = fov
+	end)
+	task.delay(duration + 1, function() if my == token and active then finish(hum) end end)
+end
+
+local function orbit(center, front, angle, radius, height)
+	return center + CFrame.Angles(0, angle, 0):VectorToWorldSpace(front * radius) + Vector3.new(0, height, 0)
+end
+
+local Sequences = {
+	Transform = function(d, ctx)
+		local swapAt = 0.62
+		return function(t)
+			local center = ctx.hrp.Position + Vector3.new(0, 1.2, 0)
+			local front = -Vector3.new(ctx.hrp.CFrame.LookVector.X, 0, ctx.hrp.CFrame.LookVector.Z).Unit
+			-- (front aponta para a FRENTE do personagem: a câmera fica diante dele)
+			front = -front
+			if t &lt; swapAt then
+				local k = t / swapAt
+				local pos = orbit(center, front, math.rad(210) * smooth(k), lerp(13, 7, smooth(k)), lerp(-1.5, 3.5, smooth(k)))
+				return CFrame.lookAt(pos, center + Vector3.new(0, lerp(0, 1.5, k), 0)), lerp(72, 55, smooth(k))
+			end
+			local k = (t - swapAt) / (1 - swapAt)
+			local pos = orbit(center, front, math.rad(210) + math.rad(-40) * smooth(k), lerp(7, 13, smooth(k)), lerp(3.5, -0.8, smooth(k)))
+			return CFrame.lookAt(pos, center + Vector3.new(0, 1.2, 0)), lerp(55, 68, smooth(k))
+		end
+	end,
+	Power = function(d, ctx)
+		local kind = d.Kind or "Up"
+		return function(t)
+			local center = ctx.hrp.Position + Vector3.new(0, 1.2, 0)
+			local look = ctx.hrp.CFrame.LookVector
+			local right = ctx.hrp.CFrame.RightVector
+			if kind == "Hand" then
+				local h = ctx.char:FindFirstChild("Right Arm") or ctx.hrp
+				local pos = h.Position + look * 4.5 + right * 2.5 + Vector3.new(0, 0.8, 0)
+				return CFrame.lookAt(pos, h.Position), lerp(60, 40, smooth(t))
+			end
+			local pos = center + look * lerp(11, 7, smooth(t)) + right * 3 + Vector3.new(0, lerp(-1, 2.5, smooth(t)), 0)
+			return CFrame.lookAt(pos, center + Vector3.new(0, lerp(1, 4, t), 0)), lerp(72, 52, smooth(t))
+		end
+	end,
+	Akumatize = function(d, ctx)
+		return function(t)
+			local center = ctx.hrp.Position + Vector3.new(0, 1.5, 0)
+			local pos = center + Vector3.new(math.sin(t * 2) * 6, lerp(10, 2, smooth(t)), lerp(14, 6, smooth(t)))
+			return CFrame.lookAt(pos, center), lerp(75, 45, smooth(t))
+		end
+	end,
+}
+
+function Cam.Play(name, data)
+	local make = Sequences[name]
+	local char = data and data.Char
+	if not make or typeof(char) ~= "Instance" or char ~= player.Character and name ~= "Akumatize" then return end
+	if name == "Akumatize" then char = player.Character end
+	if not char then return end
+	local duration = data.Duration or 2
+	local ctx = { char = char }
+	run(duration, ctx, make(data, ctx))
+end
+
+function Cam.Stop()
+	if active then
+		token += 1
+		finish(player.Character and player.Character:FindFirstChildOfClass("Humanoid"))
+	end
+end
+
+function Cam.Init(remotes)
+	remotes:WaitForChild("Cinematic").OnClientEvent:Connect(function(name, data)
+		if type(name) == "string" and type(data) == "table" then Cam.Play(name, data) end
+	end)
+	player.CharacterRemoving:Connect(function() Cam.Stop() end)
+end
+
+return Cam
+</ProtectedString>
+              </Properties>
+            </Item>
+            <Item class="ModuleScript" referent="RBX48">
+              <Properties>
+                <string name="Name">InputController</string>
+                <ProtectedString name="Source">--[[ InputController (ModuleScript) -&gt; MiraculousClient/Modules/InputController
+	Teclado/mouse/gamepad via ContextActionService. No celular, o próprio Roblox cria botões de toque
+	(createTouchButton = true), sem nenhuma ScreenGui feita por nós. Os botões mudam conforme o estado:
+	civil com Miraculous -&gt; [Transformar]; herói/vilão -&gt; combate e poderes. ]]
+local Players = game:GetService("Players")
+local RS = game:GetService("ReplicatedStorage")
+local CAS = game:GetService("ContextActionService")
+
+local Shared = RS:WaitForChild("MiraculousShared")
+local Config = require(Shared.Config)
+local API = require(Shared.ClientAPI)
+
+local Input = {}
+local player = Players.LocalPlayer
+local K = Config.Keys
+local bound = {}
+local attackHeld = false
+
+local function bind(name, fn, title, ...)
+	if bound[name] then return end
+	bound[name] = true
+	CAS:BindAction(name, fn, true, ...)
+	if title then pcall(function() CAS:SetTitle(name, title) end) end
+end
+
+local function unbind(name)
+	if bound[name] then bound[name] = nil; CAS:UnbindAction(name) end
+end
+
+local function began(fn)
+	return function(_, state)
+		if state == Enum.UserInputState.Begin then fn() end
+		return Enum.ContextActionResult.Pass
+	end
+end
+
+local function attackLoop()
+	task.spawn(function()
+		while attackHeld do
+			API.Attack()
+			task.wait(Config.Combat.Combo.Cooldown)
+		end
+	end)
+end
+
+local function refresh()
+	local hasMiraculous = player:GetAttribute("MiraculousId") ~= nil
+	local transformed = player:GetAttribute("IsTransformed") == true
+	local villain = player:GetAttribute("IsVillain") == true
+
+	if hasMiraculous and not transformed and not villain then
+		bind("MH_Transform", began(API.Transform), "Transformar", K.Transform)
+	else
+		unbind("MH_Transform")
+	end
+
+	if transformed then
+		bind("MH_Detransform", began(API.Detransform), "Sair", K.Detransform)
+		bind("MH_Attack", function(_, state)
+			if state == Enum.UserInputState.Begin then
+				attackHeld = true
+				attackLoop()
+			elseif state == Enum.UserInputState.End or state == Enum.UserInputState.Cancel then
+				attackHeld = false
+			end
+			return Enum.ContextActionResult.Pass
+		end, "Golpe", Enum.UserInputType.MouseButton1, Enum.KeyCode.ButtonR2)
+		bind("MH_Block", function(_, state)
+			if state == Enum.UserInputState.Begin then API.Block(true)
+			elseif state == Enum.UserInputState.End or state == Enum.UserInputState.Cancel then API.Block(false) end
+			return Enum.ContextActionResult.Pass
+		end, "Defesa", K.Block, Enum.KeyCode.ButtonL2)
+		bind("MH_Dodge", began(API.Dodge), "Esquiva", K.Dodge, Enum.KeyCode.ButtonB)
+		bind("MH_Purify", began(API.Purify), "Purificar", K.Purify, Enum.KeyCode.ButtonY)
+	else
+		attackHeld = false
+		for _, n in ipairs({ "MH_Detransform", "MH_Attack", "MH_Block", "MH_Dodge", "MH_Purify" }) do unbind(n) end
+	end
+
+	if transformed or villain then
+		local keys = { K.Power1, K.Power2, K.Power3, K.Power4 }
+		for i, key in ipairs(keys) do
+			bind("MH_Power" .. i, began(function() API.UsePower(i) end), tostring(i), key)
+		end
+	else
+		for i = 1, 4 do unbind("MH_Power" .. i) end
+	end
+end
+
+function Input.Init()
+	for _, attr in ipairs({ "MiraculousId", "IsTransformed", "IsVillain" }) do
+		player:GetAttributeChangedSignal(attr):Connect(refresh)
+	end
+	refresh()
+end
+
+return Input
+</ProtectedString>
+              </Properties>
+            </Item>
+            <Item class="ModuleScript" referent="RBX49">
+              <Properties>
+                <string name="Name">VFXController</string>
+                <ProtectedString name="Source">--[[ VFXController (ModuleScript) -&gt; MiraculousClient/Modules/VFXController
+	Recebe "PlayVFX" do servidor e despacha para os efeitos em MiraculousShared/VFX/Effects. ]]
+local Players = game:GetService("Players")
+local RS = game:GetService("ReplicatedStorage")
+
+local Shared = RS:WaitForChild("MiraculousShared")
+local Config = require(Shared.Config)
+local Effects = {}
+
+local VFXController = {}
+
+function VFXController.Init(remotes)
+	local fxFolder = Shared:WaitForChild("VFX"):WaitForChild("Effects")
+	local akumaFX
+	for _, mod in ipairs(fxFolder:GetChildren()) do
+		if mod:IsA("ModuleScript") then
+			local ok, set = pcall(require, mod)
+			if ok and type(set) == "table" then
+				for name, fn in pairs(set) do
+					if type(fn) == "function" and name:sub(1, 1) ~= "_" and name ~= "Setup" then
+						Effects[name] = fn
+					end
+				end
+				if set.Setup then akumaFX = set end
+			else
+				warn("[Miraculous] Falha ao carregar efeitos " .. mod.Name .. ": " .. tostring(set))
+			end
+		end
+	end
+
+	remotes:WaitForChild("PlayVFX").OnClientEvent:Connect(function(name, data)
+		local fn = Effects[name]
+		if not fn or type(data) ~= "table" then return end
+		local ok, err = pcall(fn, data)
+		if not ok and Config.Debug then warn("[Miraculous] VFX '" .. tostring(name) .. "': " .. tostring(err)) end
+	end)
+
+	if akumaFX then akumaFX.Setup() end
+
+	-- Impulso aplicado pelo servidor ao SEU personagem (pulos, esquiva, knockback)
+	remotes:WaitForChild("Launch").OnClientEvent:Connect(function(vel)
+		if typeof(vel) ~= "Vector3" then return end
+		local char = Players.LocalPlayer.Character
+		local hum = char and char:FindFirstChildOfClass("Humanoid")
+		local hrp = char and char:FindFirstChild("HumanoidRootPart")
+		if hum and hrp and hum.Health &gt; 0 then
+			hum:ChangeState(Enum.HumanoidStateType.Freefall)
+			hrp.AssemblyLinearVelocity = vel
+		end
+	end)
+end
+
+return VFXController
+</ProtectedString>
+              </Properties>
+            </Item>
+          </Item>
+        </Item>
+      </Item>
+    </Item>
+  </Item>
+</roblox>
